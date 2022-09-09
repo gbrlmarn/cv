@@ -1,0 +1,117 @@
+\documentclass[a4paper,10pt]{article}
+
+%Packages
+\usepackage[big]{layaureo} %better A4 formating
+\usepackage{titlesec} %custom \section
+\usepackage{url,parskip} %packages for formating
+\RequirePackage{color, graphicx}
+
+%Setup hyperref package, and colours for links
+\usepackage{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+%CV sections
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt}
+
+%Main
+\begin{document}
+\pagestyle{empty}
+
+%Title
+\par
+  {\centering
+    {\Huge Gabriel \textsc{Marin}}
+    \bigskip\par
+  }
+
+%Sections
+%Section: Personal Data
+\section{Personal Data}
+\begin{tabular}{rl}
+  \textsc{address:}&Rm.Valcea, Romania\\
+  \textsc{phone:}&+40 742 038849\\
+  \textsc{email:}&\href{mailto:marin.gabriel@pm.me}{marin.gabriel@pm.me}\\
+  \textsc{linkedin:}&\href{https://linkedin.com/in/gbrlmarn}{linkedin.com/gbrlmarn}\\
+  \textsc{github:}&\href{https://github.com/gbrlmarn}{github.com/gbrlmarn}\\
+  %\multicolumn{2}{c}{}\\
+\end{tabular}
+
+%About: About
+\section{About}
+\begin{tabular}{l}
+I'm a software engineer with a background in networking and programming. Motivated \\
+and eager to excel in my career. I'm seeking a position as a \textbf{systems engineer}.\\ 
+My mission is to contribute to the development of future software infrastructure.\\
+\end{tabular}
+
+%Section: Work Experience
+\section{Work Experience}
+\begin{tabular}{r|p{11cm}}
+\emph{Current}
+&\textsc{Software Engineer} at \textbf{Continental}, Sibiu\\
+\textsc{2021}
+&\footnotesize{Worked on XML parsing and code generator tool.}\\
+&\footnotesize{Worked on Excel parsing using Python in Jupyter Notebook.}\\
+\multicolumn{2}{c}{}\\
+\textsc{2019-2021} 
+&\textsc{System Engineer} at \textbf{Ministry of Internal Affairs}, Rm.Valcea\\
+&\footnotesize{Designed and developed scripts for task automation.}\\
+&\footnotesize{Deployed and configured Radius server.}\\
+&\footnotesize{Deployed and configured Squid proxy.}\\
+\multicolumn{2}{c}{}\\
+\textsc{2018-2019} 
+&\textsc{IT Engineer} at \textbf{Ministry of Internal Affairs}, Bucharest\\
+&\footnotesize{Managed users for database access.}\\
+&\footnotesize{Provided layer I support.}\\
+%\multicolumn{2}{c}{}\\
+\end{tabular}
+
+%Section: Education
+\section{Education}
+\begin{tabular}{rl}
+\textsc{2018-2020}&Master's Degree in 
+  \textsc{Telecommunications Engineering}\\
+  &\textbf{Military Technical Academy}, Bucharest\\
+\textsc{2014-2018}&Bachelor's Degree in
+  \textsc{Telecommunications Engineering}\\
+  &\textbf{Military Technical Academy}, Bucharest\\
+\textsc{2010-2014}&Baccalaureate in 
+  \textsc{Mathematics and Computer Science}\\
+  &\textbf{National College of Informatics "Matei Basarab"}, Rm.Valcea\\
+%\multicolumn{2}{c}{}\\
+\end{tabular}
+
+%Section: Computer skills
+\section{Computer Skills}
+\begin{tabular}{rl}
+\textsc{Basic:}&\textsc{a}ssembly, \textsc{gdb}, \textsc{l}isp, \textsc{e}macs, 
+\textsc{p}erl, \textsc{J}ava\textsc{S}cript, 
+\textsc{n}o\textsc{sql}, \textsc{sql}, \LaTeX\\
+\textsc{Intermediate:}&\textsc{p}ython, 
+\textsc{Linux}, \textsc{tcp/ip}, \textsc{e}lectronics, 
+\textsc{g}it, \textsc{n}map, \textsc{v}im\\
+\textsc{Advanced}:&\textsc{C}\\
+
+%\textsc{Advanced:}&\textsc{C}, \textsc{p}ython, \textsc{tcp/ip}, \textsc{v}im\\
+%\multicolumn{2}{c}{}\\
+\end{tabular}
+
+%Section: Scholarships and additional info
+
+%Section: Languages
+\section{Languages}
+\begin{tabular}{rl}
+\textsc{Romanian:}&Native\\
+\textsc{English:}&Advanced\\
+\textsc{Italian:}&Basic\\
+\textsc{French:}&Basic\\
+\end{tabular}
+
+%Section: Interests and Activities
+\section{Interests and Activities}
+Privacy, Free Software, Open Source, POSIX, Information Theory\\
+System Programming, Algorithms, Reading, Psychology, Running\\
+
+\end{document}
