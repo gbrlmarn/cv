@@ -1,0 +1,109 @@
+
+#+TITLE: Curriculum vitae
+#+AUTHOR: Gabriel Marin
+#+email: gbrlmarn@proton.me
+#+ADDRESS: Romania
+#+MOBILE: (+40) 742038849
+#+GITHUB: gbrlmarn
+#+GITLAB: gbrlmarn
+#+LINKEDIN: gbrlmarn
+#+PHOTO: gbrlmarn.jpg
+
+* About me 
+I'm a software engineer with a background in networking and programming.
+Passionated about Open-source software, programming languages and operating systems.
+Eager to excel in my career, I'm seeking a position as a *systems engineer* 
+My mission is to contribute to the development of future software infrastructure.
+
+* Skills
+- Programming Languages: C/C++/Rust, Lisp/Scheme/Clojure, 
+  Python, Java, JavaScript.
+- Technologies: Linux, Emacs, Vim, Git, Org, PlantUML, \latex.
+  
+* Employement
+** Sofware Engineer
+:PROPERTIES:
+:CV_ENV: cventry
+:FROM:   <2022-10-03>
+:TO:     Present
+:LOCATION: Bucharest, Romania
+:EMPLOYER: Luxoft
+:END:
+
+- Done socket programming using ZeroMQ library in C/C++.
+- Created unit tests using BOOST library.
+** Sofware Engineer
+:PROPERTIES:
+:CV_ENV: cventry
+:FROM:   <2021-10-03>
+:TO:     <2022-08-01>
+:LOCATION: Sibiu, Romania
+:EMPLOYER: Continental
+:END:
+
+- Worked on XML parsing and code generator using Java and Python.
+- Worked on Excel parsing using Python in Jupyter Notebook.
+** System Engineer
+:PROPERTIES:
+:CV_ENV: cventry
+:FROM:   <2019-12-10>
+:TO:     <2021-10-03>
+:LOCATION: Ramnicu Valcea, Romania
+:EMPLOYER: Ministry of Internal Affairs
+:END:
+
+** Middleware Enginer
+:PROPERTIES:
+:CV_ENV: cventry
+:FROM:   <2018-08-27>
+:TO:     <2019-12-10>
+:LOCATION: Bucharest, Romania
+:EMPLOYER: Ministry of Internal Affairs
+:END:
+
+* Education
+** Master's in Telecommunications Engineering
+:PROPERTIES:
+:CV_ENV: cventry
+:FROM:   <2018-10-27>
+:TO:     <2020-08-27>
+:LOCATION: Bucharest, Romania
+:EMPLOYER: Military Technical Academy
+:END:
+
+** Bachelor's in Telecommunications Engineering
+:PROPERTIES:
+:CV_ENV: cventry
+:FROM:   <2014-10-27 Mon>
+:TO:     <2018-08-27>
+:LOCATION: Bucharest, Romania
+:EMPLOYER: Luxoft
+:END:
+
+** Baccalaureate in Mathematics and Computer Science
+:PROPERTIES:
+:CV_ENV: cventry
+:FROM:   <2010-10-27>
+:TO:     <2014-08-03>
+:LOCATION: Bucharest, Romania
+:EMPLOYER: Luxoft
+:END:
+
+* Other stuff I do
+- I work a lot
+- I sleep a lot
+- I eat a lot
+
+
+
+* Export :noexport:
+#+begin_src emacs-lisp
+  
+  (org-export-to-file 'moderncv "curriculum.tex") :noexport:
+  (org-latex-compile "curriculum.tex") :noexport:
+
+#+end_src
+
+
+
+
