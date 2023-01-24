@@ -20,7 +20,7 @@ My mission is to contribute to the development of future software infrastructure
   Python, Java, JavaScript.
 - Technologies: Linux, Emacs, Vim, Git, Org, PlantUML, \latex.
   
-* Employement
+* Employment
 ** Sofware Engineer
 :PROPERTIES:
 :CV_ENV: cventry
@@ -89,7 +89,9 @@ My mission is to contribute to the development of future software infrastructure
 :EMPLOYER: Luxoft
 :END:
 
-* Other stuff I do
+* Projects
+
+* Other activities
 - I work a lot
 - I sleep a lot
 - I eat a lot
@@ -98,9 +100,17 @@ My mission is to contribute to the development of future software infrastructure
 
 * Export :noexport:
 #+begin_src emacs-lisp
-  
-  (org-export-to-file 'moderncv "curriculum.tex") :noexport:
-  (org-latex-compile "curriculum.tex") :noexport:
+
+  (defun create-cv ()
+    ;; Curriculum exporting to pdf usin
+    ;; ox-moderncv.el :D
+    (use-package ox-moderncv
+      :load-path "."
+      :init (require 'ox-moderncv))
+    (org-export-to-file
+	'moderncv "curriculum.tex")
+    (org-latex-compile "curriculum.tex"))
+  (create-cv)
 
 #+end_src
 
