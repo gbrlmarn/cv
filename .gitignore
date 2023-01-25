@@ -1,4 +1,8 @@
 *.pdf
 *.swp
 *~
+*.aux
+*.log
+*.out
+
 !curriculum.pdf
