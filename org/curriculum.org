@@ -16,11 +16,11 @@
 
 * About me 
 I'm a multidisciplinary sofware engineer passionated 
-about Open-source software, Programming Languages 
-and Natural Language Processing. Eager to excel in 
-my career, I'm seeking a position as a 
-*systems engineer*. My mission is to contribute 
-to the development of future software infrastructure.
+about open-source software, programming languages 
+and card magic. Eager to excel in my career, 
+I'm seeking a position as a *systems engineer*. 
+My mission is to contribute to the development 
+of future software infrastructure.
 
 * Skills (high \rightarrow low)
 - Programming Languages: C, Scheme, Python, Clojure, 
