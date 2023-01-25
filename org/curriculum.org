@@ -10,28 +10,33 @@
 #+PHOTO: gbrlmarn.jpg
 
 * About me 
-I'm a software engineer with a background in networking and programming.
-Passionated about Open-source software, programming languages and operating systems.
-Eager to excel in my career, I'm seeking a position as a *systems engineer* 
-My mission is to contribute to the development of future software infrastructure.
+I'm a multidisciplinary sofware engineer passionated 
+about Open-source software, Programming Languages 
+and Natural Language Processing. Eager to excel in 
+my career, I'm seeking a position as a 
+*systems engineer*. My mission is to contribute 
+to the development of future software infrastructure.
 
-* Skills
-- Programming Languages: C/C++/Rust, Lisp/Scheme/Clojure, 
-  Python, Java, JavaScript.
-- Technologies: Linux, Emacs, Vim, Git, Org, PlantUML, \latex.
-  
+* Skills (high \rightarrow low)
+- Programming Languages: C/C++, Scheme, Clojure, 
+  Common Lisp, Python, JavaScript, Java, Rust, 
+  Go, Bash, PowerShell, Elixir, Erlang, Ruby.
+- Languages: Romanian, English, Italian, French.
+- Technologies: Linux, Networking, Emacs, Org, Vim, 
+  Git, Org, Tmux, Docker, Make, Leiningen, Guix,  
+  Django, React, LaTeX, PlantUML.  
 * Employment
 ** Sofware Engineer
 :PROPERTIES:
 :CV_ENV: cventry
-:FROM:   <2022-10-03>
+:FROM:   <2022-08-03>
 :TO:     Present
 :LOCATION: Bucharest, Romania
 :EMPLOYER: Luxoft
 :END:
 
-- Done socket programming using ZeroMQ library in C/C++.
-- Created unit tests using BOOST library.
+- Created wrapper over ZeroMQ library in C/C++.
+- Done Test-driven development using BOOST library.
 ** Sofware Engineer
 :PROPERTIES:
 :CV_ENV: cventry
@@ -41,8 +46,8 @@ My mission is to contribute to the development of future software infrastructure
 :EMPLOYER: Continental
 :END:
 
-- Worked on XML parsing and code generator using Java and Python.
-- Worked on Excel parsing using Python in Jupyter Notebook.
+- Worked on Excel/XML parsing and code generator
+  using Jupyter Notebook, Python and Java.
 ** System Engineer
 :PROPERTIES:
 :CV_ENV: cventry
@@ -77,7 +82,7 @@ My mission is to contribute to the development of future software infrastructure
 :FROM:   <2014-10-27 Mon>
 :TO:     <2018-08-27>
 :LOCATION: Bucharest, Romania
-:EMPLOYER: Luxoft
+:EMPLOYER: Military Technical Academy
 :END:
 
 ** Baccalaureate in Mathematics and Computer Science
@@ -85,17 +90,9 @@ My mission is to contribute to the development of future software infrastructure
 :CV_ENV: cventry
 :FROM:   <2010-10-27>
 :TO:     <2014-08-03>
-:LOCATION: Bucharest, Romania
-:EMPLOYER: Luxoft
+:LOCATION: Ramnicu Valcea, Romania
+:EMPLOYER: C.N.I. Matei Basarab
 :END:
-
-* Projects
-
-* Other activities
-- I work a lot
-- I sleep a lot
-- I eat a lot
-
 
 
 * Export :noexport:
@@ -105,7 +102,7 @@ My mission is to contribute to the development of future software infrastructure
     ;; Curriculum exporting to pdf usin
     ;; ox-moderncv.el :D
     (use-package ox-moderncv
-      :load-path "."
+      :load-path "~fun/repos/cv"
       :init (require 'ox-moderncv))
     (org-export-to-file
 	'moderncv "curriculum.tex")
@@ -113,7 +110,3 @@ My mission is to contribute to the development of future software infrastructure
   (create-cv)
 
 #+end_src
-
-
-
-
