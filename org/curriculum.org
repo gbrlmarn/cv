@@ -9,6 +9,11 @@
 #+LINKEDIN: gbrlmarn
 #+PHOTO: gbrlmarn.jpg
 
+# CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+#+CVSTYLE: casual
+# CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+#+CVCOLOR: green
+
 * About me 
 I'm a multidisciplinary sofware engineer passionated 
 about Open-source software, Programming Languages 
@@ -18,13 +23,13 @@ my career, I'm seeking a position as a
 to the development of future software infrastructure.
 
 * Skills (high \rightarrow low)
-- Programming Languages: C/C++, Scheme, Clojure, 
-  Common Lisp, Python, JavaScript, Java, Rust, 
-  Go, Bash, PowerShell, Elixir, Erlang, Ruby.
-- Languages: Romanian, English, Italian, French.
-- Technologies: Linux, Networking, Emacs, Org, Vim, 
+- Programming Languages: C, Scheme, Python, Clojure, 
+  JavaScript, Java, Common Lisp, C++, Rust, Go, 
+  PowerShell, Bash, Perl, Elixir, Erlang.
+- Languages: Romanian, English, Italian, French. 
+- Technologies: Linux, Networking, *Emacs*, Org, Vim, 
   Git, Org, Tmux, Docker, Make, Leiningen, Guix,  
-  Django, React, LaTeX, PlantUML.  
+  Django, React, LaTeX, PlantUML.
 * Employment
 ** Sofware Engineer
 :PROPERTIES:
@@ -34,9 +39,7 @@ to the development of future software infrastructure.
 :LOCATION: Bucharest, Romania
 :EMPLOYER: Luxoft
 :END:
-
 - Created wrapper over ZeroMQ library in C/C++.
-- Done Test-driven development using BOOST library.
 ** Sofware Engineer
 :PROPERTIES:
 :CV_ENV: cventry
@@ -45,9 +48,7 @@ to the development of future software infrastructure.
 :LOCATION: Sibiu, Romania
 :EMPLOYER: Continental
 :END:
-
-- Worked on Excel/XML parsing and code generator
-  using Jupyter Notebook, Python and Java.
+- Worked on XML parser using Python and Java.
 ** System Engineer
 :PROPERTIES:
 :CV_ENV: cventry
@@ -56,7 +57,7 @@ to the development of future software infrastructure.
 :LOCATION: Ramnicu Valcea, Romania
 :EMPLOYER: Ministry of Internal Affairs
 :END:
-
+- Automated software deployment using PowerShell. 
 ** Middleware Enginer
 :PROPERTIES:
 :CV_ENV: cventry
@@ -65,7 +66,7 @@ to the development of future software infrastructure.
 :LOCATION: Bucharest, Romania
 :EMPLOYER: Ministry of Internal Affairs
 :END:
-
+- Managed Database user access. 
 * Education
 ** Master's in Telecommunications Engineering
 :PROPERTIES:
@@ -85,15 +86,6 @@ to the development of future software infrastructure.
 :EMPLOYER: Military Technical Academy
 :END:
 
-** Baccalaureate in Mathematics and Computer Science
-:PROPERTIES:
-:CV_ENV: cventry
-:FROM:   <2010-10-27>
-:TO:     <2014-08-03>
-:LOCATION: Ramnicu Valcea, Romania
-:EMPLOYER: C.N.I. Matei Basarab
-:END:
-
 
 * Export :noexport:
 #+begin_src emacs-lisp
@@ -108,5 +100,4 @@ to the development of future software infrastructure.
 	'moderncv "curriculum.tex")
     (org-latex-compile "curriculum.tex"))
   (create-cv)
-
 #+end_src
