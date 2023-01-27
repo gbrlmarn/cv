@@ -17,7 +17,7 @@
 * About me 
 I'm a multidisciplinary sofware engineer passionated 
 about open-source software, programming languages 
-and card magic. Eager to excel in my career, 
+and [[https://www.youtube.com/watch?v=S9T6VeXbfkQ][/card magic/]]. Eager to excel in my career, 
 I'm seeking a position as a *systems engineer*. 
 My mission is to contribute to the development 
 of future software infrastructure.
