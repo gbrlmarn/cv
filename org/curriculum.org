@@ -1,7 +1,7 @@
 
 #+TITLE: Curriculum vitae
 #+AUTHOR: Gabriel Marin
-#+email: gbrlmarn@proton.me
+#+EMAIL: gbrlmarn@proton.me
 #+ADDRESS: Romania
 #+MOBILE: (+40) 742038849
 #+GITHUB: gbrlmarn
@@ -15,23 +15,23 @@
 #+CVCOLOR: green
 
 * About me 
-I'm a multidisciplinary sofware engineer passionated 
+I'm a multidisciplinary software engineer passionated 
 about open-source software, programming languages 
 and [[https://www.youtube.com/watch?v=S9T6VeXbfkQ][/card magic/]]. Eager to excel in my career, 
 I'm seeking a position as a *systems engineer*. 
 My mission is to contribute to the development 
 of future software infrastructure.
 
-* Skills (high \rightarrow low)
+* Skills
 - Programming Languages: C, Scheme, Python, Clojure, 
   JavaScript, Java, Common Lisp, C++, Rust, Go, 
   PowerShell, Bash, Perl, Elixir, Erlang.
 - Languages: Romanian, English, Italian, French. 
-- Technologies: Linux, Networking, *Emacs*, Org, Vim, 
+- Technologies: Linux, Networking, /Emacs/, Org, Vim, 
   Git, Org, Tmux, Docker, Make, Leiningen, Guix,  
   Django, React, LaTeX, PlantUML.
 * Employment
-** Sofware Engineer
+** Software Engineer
 :PROPERTIES:
 :CV_ENV: cventry
 :FROM:   <2022-08-03>
@@ -40,7 +40,7 @@ of future software infrastructure.
 :EMPLOYER: Luxoft
 :END:
 - Created wrapper over ZeroMQ library in C/C++.
-** Sofware Engineer
+** Software Engineer
 :PROPERTIES:
 :CV_ENV: cventry
 :FROM:   <2021-10-03>
@@ -58,7 +58,7 @@ of future software infrastructure.
 :EMPLOYER: Ministry of Internal Affairs
 :END:
 - Automated software deployment using PowerShell. 
-** Middleware Enginer
+** Middleware Engineer
 :PROPERTIES:
 :CV_ENV: cventry
 :FROM:   <2018-08-27>
