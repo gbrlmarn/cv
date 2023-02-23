@@ -1,4 +1,4 @@
-% Created 2023-02-19 Sun 23:10
+% Created 2023-02-23 Thu 23:52
 % Intended LaTeX compiler: pdflatex
 \documentclass[12pt,a4paper]{article}
 \usepackage[utf8]{inputenc}
@@ -22,6 +22,9 @@
 \usepackage{hyperref}
 \usepackage{blindtext}
 \usepackage{setspace}
+\usepackage[scaled]{helvet}
+\usepackage[T1]{fontenc}
+\renewcommand\familydefault{\sfdefault}
 \definecolor{lightgray}{gray}{0.8}
 \newcolumntype{L}{>{\raggedleft}p{0.25\textwidth}}
 \newcolumntype{R}{p{0.78\textwidth}}
@@ -33,7 +36,7 @@
 \titlespacing{\section}{0pt}{5pt}{5pt}
 \titleformat{\subsection}{\Large\bfseries\scshape}{}{0em}{}
 \titlespacing{\subsection}{0pt}{5pt}{5pt}
-\renewcommand{\maketitle}{\begin{center}{\LARGE\bfseries \theauthor } \vspace{5pt} \smallbreak \thetitle \end{center}}
+\renewcommand{\maketitle}{\begin{center}{\LARGE\bfseries \theauthor } \vspace{3pt} \smallbreak \thetitle \end{center}}
 \hypersetup{colorlinks=true, urlcolor=blue}
 \author{Gabriel Marin}
 \date{\today}
@@ -50,12 +53,13 @@
 \maketitle
 
 \section*{Experience}
-\label{sec:orgf2357bc}
+\label{sec:orgea47424}
 \begin{center}
 \begin{tabular}{{L!{\VRule}R}}
 \hline
 from August 2022 & Software Developer, Luxoft\\
 to Present & - Developer wrapper over ZeroMQ library.\\
+ & - Worked on user interface for sending/receiving messages.\\
 \hline
 from October 2021 & Software Developer, Continental\\
 to August 2022 & - Worked on XML parser and code generator.\\
@@ -70,7 +74,7 @@ to December 2019 & - Managed database user access.\\
 \end{center}
 
 \section*{Education}
-\label{sec:org47afc21}
+\label{sec:org8e76f84}
 \begin{center}
 \begin{tabular}{{L!{\VRule}R}}
 \hline
@@ -86,9 +90,9 @@ to December 2019 & - Managed database user access.\\
 \end{center}
 
 \section*{Skills}
-\label{sec:orge326201}
+\label{sec:org7495eda}
 \subsection*{Development}
-\label{sec:orgcd7ee5a}
+\label{sec:orgdf15284}
 \begin{center}
 \begin{tabular}{{L!{\VRule}R}}
 \hline
@@ -96,18 +100,23 @@ ADVANCED & C, Scheme\\
 \hline
 INTERMEDIATE & C++, Python, Clojure, Java, JavaScript\\
 \hline
-ELEMENTARY & Elixir, Hy, Racket, Common Lisp\\
+ELEMENTARY & Elixir, Hy, Racket, Common Lisp, Rust\\
 \hline
 \end{tabular}
 \end{center}
 \subsection*{Tools}
-\label{sec:orga64eda3}
+\label{sec:org96cbacf}
+I have long-time experience in Linux, having used Linux
+exclusively from the year 2019. In addition,
+I'm experienced in version control, file management,
+monitoring, virtualization, containerization, document
+writing as well as Agile work methods.
 \begin{center}
 \begin{tabular}{{L!{\VRule}R}}
 \hline
-ADVANCED & Linux, Git, Unix shell, Emacs\\
+ADVANCED & Linux, Git, Emacs, Unix shell\\
 \hline
-INTERMEDIATE & \LaTeX, Docker\\
+INTERMEDIATE & \LaTeX, Docker, VirtualBox\\
 \hline
 ELEMENTARY & React, Django, SQL, NoSQL, Wireshark, Nmap\\
 \hline
@@ -115,7 +124,7 @@ ELEMENTARY & React, Django, SQL, NoSQL, Wireshark, Nmap\\
 \end{center}
 
 \subsection*{Languages}
-\label{sec:org3b82af7}
+\label{sec:org0412798}
 \begin{center}
 \begin{tabular}{CCCC}
 \hline
@@ -126,7 +135,7 @@ Proficient & Native & Elementary & Elementary\\
 \end{center}
 
 \subsection*{Certifications}
-\label{sec:org4d2e978}
+\label{sec:org5b0d585}
 \begin{itemize}
 \item \href{https://www.freecodecamp.org/certification/fcc27d8d0fe-d4ec-4f51-8fe6-6166f68d948f/front-end-development-libraries}{Front End Development Libraries}
 \item \href{https://www.freecodecamp.org/certification/fcc27d8d0fe-d4ec-4f51-8fe6-6166f68d948f/javascript-algorithms-and-data-structures}{JavaScript Algorithms and Data Structures}

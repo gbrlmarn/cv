@@ -14,7 +14,12 @@
 #+LaTeX_HEADER: \usepackage{titling}
 #+LaTeX_HEADER: \usepackage{hyperref}
 #+LaTeX_HEADER: \usepackage{blindtext}
-#+LaTex_HEADER: \usepackage{setspace}
+#+LaTeX_HEADER: \usepackage{setspace}
+
+# All document font 
+#+LaTeX_HEADER: \usepackage[scaled]{helvet}
+#+LaTeX_HEADER: \usepackage[T1]{fontenc}
+#+LaTeX_HEADER: \renewcommand\familydefault{\sfdefault}
 
 # Table aesthetics
 #+LaTeX_HEADER: \definecolor{lightgray}{gray}{0.8}
@@ -36,26 +41,27 @@
 #+LaTeX_HEADER: \titlespacing{\subsection}{0pt}{5pt}{5pt}
 
 # Header
-#+LaTeX_HEADER: \renewcommand{\maketitle}{\begin{center}{\LARGE\bfseries \theauthor } \vspace{5pt} \smallbreak \thetitle \end{center}}
+#+LaTeX_HEADER: \renewcommand{\maketitle}{\begin{center}{\LARGE\bfseries \theauthor } \vspace{3pt} \smallbreak \thetitle \end{center}}
 
 # Hyperlinks
 #+LaTeX_HEADER: \hypersetup{colorlinks=true, urlcolor=blue}
 
 * Experience
 #+ATTR_LATEX: :environment tabular :align {L!{\VRule}R}
-|--------------------+---------------------------------------------------|
-| from August 2022   | Software Developer, Luxoft                        |
-| to Present         | - Developer wrapper over ZeroMQ library.          |
-|--------------------+---------------------------------------------------|
-| from October 2021  | Software Developer, Continental                   |
-| to August 2022     | - Worked on XML parser and code generator.        |
-|--------------------+---------------------------------------------------|
-| from December 2019 | System Engineer, Ministry of Internal Affairs     |
-| to October 2021    | - Automated software deployment using PowerShell. |
-|--------------------+---------------------------------------------------|
-| from August 2018   | IT Engineer, Ministry of Internal Affairs         |
-| to December 2019   | - Managed database user access.                   |
-|--------------------+---------------------------------------------------|
+|--------------------+------------------------------------------------------------|
+| from August 2022   | Software Developer, Luxoft                                 |
+| to Present         | - Developer wrapper over ZeroMQ library.                   |
+|                    | - Worked on user interface for sending/receiving messages. |
+|--------------------+------------------------------------------------------------|
+| from October 2021  | Software Developer, Continental                            |
+| to August 2022     | - Worked on XML parser and code generator.                 |
+|--------------------+------------------------------------------------------------|
+| from December 2019 | System Engineer, Ministry of Internal Affairs              |
+| to October 2021    | - Automated software deployment using PowerShell.          |
+|--------------------+------------------------------------------------------------|
+| from August 2018   | IT Engineer, Ministry of Internal Affairs                  |
+| to December 2019   | - Managed database user access.                            |
+|--------------------+------------------------------------------------------------|
 
 * Education
 #+ATTR_LATEX: :environment tabular :align {L!{\VRule}R}
@@ -77,14 +83,19 @@
 |--------------+----------------------------------------|
 | INTERMEDIATE | C++, Python, Clojure, Java, JavaScript |
 |--------------+----------------------------------------|
-| ELEMENTARY   | Elixir, Hy, Racket, Common Lisp        |
+| ELEMENTARY   | Elixir, Hy, Racket, Common Lisp, Rust  |
 |--------------+----------------------------------------|
 ** Tools 
+I have long-time experience in Linux, having used Linux
+exclusively from the year 2019. In addition,
+I'm experienced in version control, file management,
+monitoring, virtualization, containerization, document
+writing as well as Agile work methods.
 #+ATTR_LATEX: :environment tabular :align {L!{\VRule}R}
 |--------------+--------------------------------------------|
-| ADVANCED     | Linux, Git, Unix shell, Emacs              |
+| ADVANCED     | Linux, Git, Emacs, Unix shell              |
 |--------------+--------------------------------------------|
-| INTERMEDIATE | \LaTeX, Docker                             |
+| INTERMEDIATE | \LaTeX, Docker, VirtualBox                 |
 |--------------+--------------------------------------------|
 | ELEMENTARY   | React, Django, SQL, NoSQL, Wireshark, Nmap |
 |--------------+--------------------------------------------|
