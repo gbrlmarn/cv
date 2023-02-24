@@ -1,4 +1,4 @@
-#+TITLE: Home: Romania --- Github: [[https://github.com/gbrlmarn][github.com/gbrlmarn]] --- E-mail: [[https://github.com/gbrlmarn]github.com/gbrlmarn] --- E-mail:[[mailto:gbrlmarn@proton.me][gbrlmarn@proton.me]]
+#+TITLE: Linkedin: [[https://linkedin.com/in/gbrlmarn][linkedin.com/in/gbrlmarn]] --- Github: [[https://github.com/gbrlmarn][github.com/gbrlmarn]] --- E-mail: [[https://github.com/gbrlmarn]github.com/gbrlmarn] --- E-mail:[[mailto:gbrlmarn@proton.me][gbrlmarn@proton.me]]
 #+AUTHOR: Gabriel Marin
 #+OPTIONS: toc:nil num:nil
 #+LaTeX_CLASS: article
@@ -93,7 +93,7 @@ in dynamically typed languages.
 I have long-time experience in Linux, having used Linux
 exclusively from the year 2019. In addition,
 I'm experienced in version control, file management,
-monitoring, socket programming, virtualization, 
+monitoring, socket programming, virtualization,
 containerization, document writing as well as 
 Agile work methods.
 #+ATTR_LATEX: :environment tabular :align {L!{\VRule}R}
