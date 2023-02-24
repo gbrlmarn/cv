@@ -1,4 +1,4 @@
-#+TITLE: Home: Romania --- Github: [[https://github.com/gbrlmarn][github.com/gbrlmarn ---]] E-mail:[[mailto:gbrlmarn@proton.me][gbrlmarn@proton.me]]
+#+TITLE: Home: Romania --- Github: [[https://github.com/gbrlmarn][github.com/gbrlmarn]] --- E-mail: [[https://github.com/gbrlmarn]github.com/gbrlmarn] --- E-mail:[[mailto:gbrlmarn@proton.me][gbrlmarn@proton.me]]
 #+AUTHOR: Gabriel Marin
 #+OPTIONS: toc:nil num:nil
 #+LaTeX_CLASS: article
@@ -9,7 +9,7 @@
 
 # Setup packages to be used
 #+LaTeX_HEADER: \usepackage{array, xcolor, bibentry}
-#+LaTeX_HEADER: \usepackage[margin=2cm]{geometry}
+#+LaTeX_HEADER: \usepackage[margin=1.3cm]{geometry}
 #+LaTeX_HEADER: \usepackage{titlesec}
 #+LaTeX_HEADER: \usepackage{titling}
 #+LaTeX_HEADER: \usepackage{hyperref}
@@ -58,6 +58,7 @@
 |--------------------+------------------------------------------------------------|
 | from December 2019 | System Engineer, Ministry of Internal Affairs              |
 | to October 2021    | - Automated software deployment using PowerShell.          |
+|                    | - Installed and configured Squid proxy.                    |
 |--------------------+------------------------------------------------------------|
 | from August 2018   | IT Engineer, Ministry of Internal Affairs                  |
 | to December 2019   | - Managed database user access.                            |
@@ -65,40 +66,44 @@
 
 * Education
 #+ATTR_LATEX: :environment tabular :align {L!{\VRule}R}
-|-----------+----------------------------------------------------------|
-| 2018-2020 | Master's Degree, Military Technical Academy, Bucharest   |
-|           | Field: Telecommunications and Electronic Engineering     |
-|           | Thesis: Platform for Wireless Security                   |
-|-----------+----------------------------------------------------------|
-| 2014-2018 | Bachelor's Degree, Military Technical Academy, Bucharest |
-|           | Field: Telecommunications and Electronic Engineering     |
-|           | Thesis: Beam-forming using MUSIC algorithhm              |
-|-----------+----------------------------------------------------------|
+|-----------+------------------------------------------------------------------|
+| 2018-2020 | Master's Degree, Military Technical Academy, Bucharest           |
+|           | Field: Telecommunications and Electronic Engineering             |
+|           | Thesis: Platform for Wireless Security                           |
+|-----------+------------------------------------------------------------------|
+| 2014-2018 | Bachelor's Degree, Military Technical Academy, Bucharest         |
+|           | Field: Telecommunications and Electronic Engineering             |
+|           | Thesis: Elimination of interference using the beamforming method |
+|-----------+------------------------------------------------------------------|
 
 * Skills
 ** Development
+My skill set focuses on general-purpose programming
+languages and expands into functional programming
+in dynamically typed languages.
 #+ATTR_LATEX: :environment tabular :align {L!{\VRule}R}
-|--------------+----------------------------------------|
-| ADVANCED     | C, Scheme                              |
-|--------------+----------------------------------------|
-| INTERMEDIATE | C++, Python, Clojure, Java, JavaScript |
-|--------------+----------------------------------------|
-| ELEMENTARY   | Elixir, Hy, Racket, Common Lisp, Rust  |
-|--------------+----------------------------------------|
+|--------------+-----------------------------------|
+| ADVANCED     | Scheme/Racket, C/C++              |
+|--------------+-----------------------------------|
+| INTERMEDIATE | Clojure, Python, Java, JavaScript |
+|--------------+-----------------------------------|
+| ELEMENTARY   | Elixir, Hy, Common Lisp, Rust     |
+|--------------+-----------------------------------|
 ** Tools 
 I have long-time experience in Linux, having used Linux
 exclusively from the year 2019. In addition,
 I'm experienced in version control, file management,
-monitoring, virtualization, containerization, document
-writing as well as Agile work methods.
+monitoring, socket programming, virtualization, 
+containerization, document writing as well as 
+Agile work methods.
 #+ATTR_LATEX: :environment tabular :align {L!{\VRule}R}
-|--------------+--------------------------------------------|
-| ADVANCED     | Linux, Git, Emacs, Unix shell              |
-|--------------+--------------------------------------------|
-| INTERMEDIATE | \LaTeX, Docker, VirtualBox                 |
-|--------------+--------------------------------------------|
-| ELEMENTARY   | React, Django, SQL, NoSQL, Wireshark, Nmap |
-|--------------+--------------------------------------------|
+|--------------+------------------------------------------------------|
+| ADVANCED     | Linux, Git, Emacs, Unix shell                        |
+|--------------+------------------------------------------------------|
+| INTERMEDIATE | \LaTeX, Docker, ZeroMQ, VirtualBox, PowerShell       |
+|--------------+------------------------------------------------------|
+| ELEMENTARY   | React, Django, SQL, NoSQL, RabbitMQ, Wireshark, Nmap |
+|--------------+------------------------------------------------------|
 
 ** Languages
 #+ATTR_LATEX: :environment tabular :align CCCC
