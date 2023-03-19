@@ -81,37 +81,37 @@
 ** Development
 My skill set focuses on general-purpose programming
 languages and expands into functional programming
-in dynamically typed languages.
+in dynamically typed languages. I'm passionate 
+about Lisp dialects.
 #+ATTR_LATEX: :environment tabular :align {L!{\VRule}R}
 |--------------+-----------------------------------|
 | ADVANCED     | Scheme/Racket, C/C++              |
 |--------------+-----------------------------------|
 | INTERMEDIATE | Clojure, Python, Java, JavaScript |
 |--------------+-----------------------------------|
-| ELEMENTARY   | Elixir, Hy, Common Lisp, Rust     |
+| ELEMENTARY   | Common Lisp, Hy, Elixir, Rust, Go |
 |--------------+-----------------------------------|
 ** Tools 
 I have long-time experience in Linux, having used Linux
 exclusively from the year 2019. In addition,
 I'm experienced in version control, file management,
-monitoring, socket programming, virtualization,
-containerization, document writing as well as 
-Agile work methods.
+socket programming, project building, containerization, 
+document writing as well as Agile work methods.
 #+ATTR_LATEX: :environment tabular :align {L!{\VRule}R}
-|--------------+----------------------------------------------------------|
-| ADVANCED     | Linux, Git, Emacs, Unix shell                            |
-|--------------+----------------------------------------------------------|
-| INTERMEDIATE | \LaTeX, Org mode, Docker, ZeroMQ, VirtualBox, PowerShell |
-|--------------+----------------------------------------------------------|
-| ELEMENTARY   | React, Django, SQL, NoSQL, RabbitMQ, Wireshark, Nmap     |
-|--------------+----------------------------------------------------------|
+|--------------+----------------------------------------------|
+| ADVANCED     | Linux, Git, Emacs, Unix shell                |
+|--------------+----------------------------------------------|
+| INTERMEDIATE | \LaTeX, Docker, Leningen, ZeroMQ, PowerShell |
+|--------------+----------------------------------------------|
+| ELEMENTARY   | Maven, React, Django, SQL, NoSQL, RabbitMQ   |
+|--------------+----------------------------------------------|
 
 ** Languages
 #+ATTR_LATEX: :environment tabular :align CCCC
-|------------+----------+------------+------------|
-| English    | Romanian | Italian    | French     |
-| Proficient | Native   | Elementary | Elementary |
-|------------+----------+------------+------------|
+|----------+------------+------------+------------|
+| Romanian | English    | Italian    | French     |
+| Native   | Proficient | Elementary | Elementary |
+|----------+------------+------------+------------|
 
 ** Certifications
    - [[https://www.freecodecamp.org/certification/fcc27d8d0fe-d4ec-4f51-8fe6-6166f68d948f/front-end-development-libraries][Front End Development Libraries]]
