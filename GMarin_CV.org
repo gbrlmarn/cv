@@ -38,7 +38,7 @@
 
 # Subtitles2
 #+LaTeX_HEADER: \titleformat{\subsection}{\Large\bfseries\scshape}{}{0em}{}
-#+LaTeX_HEADER: \titlespacing{\subsection}{0pt}{5pt}{5pt}
+#+LaTeX_HEADER: \titlespacing{\subsection}{0pt}{3pt}{3pt}
 
 # Header
 #+LaTeX_HEADER: \renewcommand{\maketitle}{\begin{center}{\LARGE\bfseries \theauthor } \vspace{3pt} \smallbreak \thetitle \end{center}}
@@ -52,6 +52,7 @@
 | from August 2022   | Software Developer, Luxoft                                 |
 | to Present         | - Developer wrapper over ZeroMQ library.                   |
 |                    | - Worked on user interface for sending/receiving messages. |
+|                    | - Created prototype for integration tests using Clojure.   |
 |--------------------+------------------------------------------------------------|
 | from October 2021  | Software Developer, Continental                            |
 | to August 2022     | - Worked on XML parser and code generator.                 |
@@ -87,7 +88,7 @@ about Lisp dialects.
 |--------------+-----------------------------------|
 | ADVANCED     | Scheme/Racket, C/C++              |
 |--------------+-----------------------------------|
-| INTERMEDIATE | Clojure, Python, Java, JavaScript |
+| INTERMEDIATE | Clojure, Java, Python,o JavaScript |
 |--------------+-----------------------------------|
 | ELEMENTARY   | Common Lisp, Hy, Elixir, Rust, Go |
 |--------------+-----------------------------------|
