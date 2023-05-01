@@ -86,9 +86,9 @@ in dynamically typed languages. I'm passionate
 about Lisp dialects.
 #+ATTR_LATEX: :environment tabular :align {L!{\VRule}R}
 |--------------+-----------------------------------|
-| ADVANCED     | Scheme/Racket, C/C++              |
+| ADVANCED     | Scheme, Clojure, C/C++            |
 |--------------+-----------------------------------|
-| INTERMEDIATE | Clojure, Java, Python,o JavaScript |
+| INTERMEDIATE | Java, Python, JavaScript, Racket  |
 |--------------+-----------------------------------|
 | ELEMENTARY   | Common Lisp, Hy, Elixir, Rust, Go |
 |--------------+-----------------------------------|
@@ -99,13 +99,13 @@ I'm experienced in version control, file management,
 socket programming, project building, containerization, 
 document writing as well as Agile work methods.
 #+ATTR_LATEX: :environment tabular :align {L!{\VRule}R}
-|--------------+----------------------------------------------|
-| ADVANCED     | Linux, Git, Emacs, Unix shell                |
-|--------------+----------------------------------------------|
-| INTERMEDIATE | \LaTeX, Docker, Leningen, ZeroMQ, PowerShell |
-|--------------+----------------------------------------------|
-| ELEMENTARY   | Maven, React, Django, SQL, NoSQL, RabbitMQ   |
-|--------------+----------------------------------------------|
+|--------------+----------------------------------------------------------------|
+| ADVANCED     | Linux, Git, Emacs, Unix shell                                  |
+|--------------+----------------------------------------------------------------|
+| INTERMEDIATE | \LaTeX, Docker, Leningen, ZeroMQ, PowerShell                   |
+|--------------+----------------------------------------------------------------|
+| ELEMENTARY   | Hugo, Ring, Hiccup, Maven, React, Django, SQL, NoSQL, RabbitMQ |
+|--------------+----------------------------------------------------------------|
 
 ** Languages
 #+ATTR_LATEX: :environment tabular :align CCCC
