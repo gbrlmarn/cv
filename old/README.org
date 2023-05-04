@@ -1,0 +1,17 @@
+#+TITLE: My personal cv
+#+AUTHOR: Gabriel Marin
+
+* Personal Curriculum Vitae
+- CV is generated from emacs inside org mode
+- CV can be compiled using 'create-cv' function
+  that is located inside ./org/curriculum.org
+- For this to work you will need LaTex installed
+  and also moderncv template
+- Thanks to Óscar Nájera for sharing org-cv:
+  https://gitlab.com/Titan-C/org-cv
+  
+* LaTeX
+#+begin_src bash
+  # This line covers the LateX deps
+  sudo apt install texlive-full
+#+end_src

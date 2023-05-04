@@ -1,0 +1,103 @@
+
+#+TITLE: Curriculum vitae
+#+AUTHOR: Gabriel Marin
+#+EMAIL: gbrlmarn@proton.me
+#+ADDRESS: Romania
+#+MOBILE: (+40) 742038849
+#+GITHUB: gbrlmarn
+#+GITLAB: gbrlmarn
+#+LINKEDIN: gbrlmarn
+#+PHOTO: gbrlmarn.jpg
+
+# CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+#+CVSTYLE: casual
+# CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+#+CVCOLOR: green
+
+* About me 
+I'm a multidisciplinary software engineer passionated 
+about open-source software, programming languages 
+and [[https://www.youtube.com/watch?v=S9T6VeXbfkQ][/card magic/]]. Eager to excel in my career, 
+I'm seeking a position as a *systems engineer*. 
+My mission is to contribute to the development 
+of future software infrastructure.
+
+* Skills
+- Programming Languages: C, Scheme, Python, Clojure, 
+  JavaScript, Java, Common Lisp, C++, Rust, Go, 
+  PowerShell, Bash, Perl, Elixir, Erlang.
+- Languages: Romanian, English, Italian, French. 
+- Technologies: Linux, Networking, /Emacs/, Org, Vim, 
+  Git, Org, Tmux, Docker, Make, Leiningen, Guix,  
+  Django, React, LaTeX, PlantUML.
+* Employment
+** Software Engineer
+:PROPERTIES:
+:CV_ENV: cventry
+:FROM:   <2022-08-03>
+:TO:     Present
+:LOCATION: Bucharest, Romania
+:EMPLOYER: Luxoft
+:END:
+- Created wrapper over ZeroMQ library in C/C++.
+** Software Engineer
+:PROPERTIES:
+:CV_ENV: cventry
+:FROM:   <2021-10-03>
+:TO:     <2022-08-01>
+:LOCATION: Sibiu, Romania
+:EMPLOYER: Continental
+:END:
+- Worked on XML parser using Python and Java.
+** System Engineer
+:PROPERTIES:
+:CV_ENV: cventry
+:FROM:   <2019-12-10>
+:TO:     <2021-10-03>
+:LOCATION: Ramnicu Valcea, Romania
+:EMPLOYER: Ministry of Internal Affairs
+:END:
+- Automated software deployment using PowerShell. 
+** Middleware Engineer
+:PROPERTIES:
+:CV_ENV: cventry
+:FROM:   <2018-08-27>
+:TO:     <2019-12-10>
+:LOCATION: Bucharest, Romania
+:EMPLOYER: Ministry of Internal Affairs
+:END:
+- Managed Database user access. 
+* Education
+** Master's in Telecommunications Engineering
+:PROPERTIES:
+:CV_ENV: cventry
+:FROM:   <2018-10-27>
+:TO:     <2020-08-27>
+:LOCATION: Bucharest, Romania
+:EMPLOYER: Military Technical Academy
+:END:
+
+** Bachelor's in Telecommunications Engineering
+:PROPERTIES:
+:CV_ENV: cventry
+:FROM:   <2014-10-27 Mon>
+:TO:     <2018-08-27>
+:LOCATION: Bucharest, Romania
+:EMPLOYER: Military Technical Academy
+:END:
+
+
+* Export :noexport:
+#+begin_src emacs-lisp
+
+  (defun create-cv ()
+    ;; Curriculum exporting to pdf usin
+    ;; ox-moderncv.el :D
+    (use-package ox-moderncv
+      :load-path "~fun/repos/cv"
+      :init (require 'ox-moderncv))
+    (org-export-to-file
+	'moderncv "curriculum.tex")
+    (org-latex-compile "curriculum.tex"))
+  (create-cv)
+#+end_src
