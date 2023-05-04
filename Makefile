@@ -1,17 +1,12 @@
-COMPILER := pdflatex
+CC = pdflatex
+OBJS = GMarin_CV
 
-.PHONY: all
+.PHONY: all clean
 
-all: cv.pdf cv2.pdf
+all: $(OBJS)
 
-cv.pdf: cv.tex
-	$(COMPILER) $<
- 
-cv2.pdf: cv2.tex
-	$(COMPILER) $<
-
-cv3.pdf: cv3.tex
-	$(COMPILER) $<
+GMarin_CV.pdf: GMarin_CV.tex 
+	pdflatex $^
 
 clean:
-	rm -f *~ *.pdf *.log *.aux *.out
+	rm -rf *.out *.aux *.log *~
