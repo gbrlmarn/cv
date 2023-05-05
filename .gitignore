@@ -5,5 +5,5 @@
 *.log
 *.out
 
-!curriculum.pdf
+# Include curriculum pdf file
 !GMarin_CV.pdf
