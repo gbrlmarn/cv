@@ -1,11 +1,11 @@
-\documentclass[a4paper,10pt]{article}
+\documentclass[a4paper,12pt]{article}
 
 %Packages
 \usepackage[big]{layaureo} %better A4 formating
 \usepackage{titlesec} %custom \section
 \usepackage{url,parskip} %packages for formating
 \usepackage{multicol} % multiples columns
-\setlength{\columnsep}{2cm} % space between columns
+\setlength{\columnsep}{1cm} % space between columns
 \RequirePackage{color, graphicx}
 
 %Setup hyperref package, and colours for links
@@ -15,7 +15,7 @@
 
 %CV sections
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
-\titlespacing{\section}{0pt}{3pt}{3pt}
+\titlespacing{\section}{0pt}{1pt}{1pt}
 
 %Main
 \begin{document}
@@ -25,7 +25,7 @@
 \par
   {\centering
     {\Huge Gabriel \textsc{Marin}}
-    \bigskip\par
+    bigskip\par
   }
 
 %Sections
@@ -34,7 +34,9 @@
 \begin{multicols}{2}
   \begin{tabular}{rl}
     \textsc{address:}&Romania\\
-    \textsc{phone:}&+40 742 038 849\\
+    \textsc{phone:}&+4 074 203 8849\\
+    \textsc{website:}&\href{https://gbrlmarn.github.io}
+      {gbrlmarn.github.io}\\
   \end{tabular}
     \columnbreak
   \begin{tabular}{rl}
@@ -78,12 +80,12 @@ of future software infrastructure.\\
 &\footnotesize{Worked on Excel parsing using Python in Jupyter Notebook.}\\
 \multicolumn{2}{c}{}\\
 \textsc{2019-2021} 
-  &\textsc{System Engineer} at \textbf{Ministry of Internal Affairs}, Rm.Valcea\\
+  &\textsc{Sys Engineer} at \textbf{Ministry of Internal Affairs}, Rm.Valcea\\
 &\footnotesize{
   Designed and developed scripts for task automation.}\\
 &\footnotesize{
   Deployed and configured Radius server and Squid proxy.}\\
-\multicolumn{2}{c}{}\\
+%\multicolumn{2}{c}{}\\
 \textsc{2018-2019} 
 &\textsc{IT Engineer} at \textbf{Ministry of Internal Affairs}, Bucharest\\
 &\footnotesize{Provided layer I support.}\\
@@ -100,53 +102,61 @@ of future software infrastructure.\\
 \textsc{2014-2018}&Bachelor's Degree in
   \textsc{Telecommunications Engineering}\\
   &\textbf{Military Technical Academy}, Bucharest\\
-\textsc{2010-2014}&Baccalaureate in 
-  \textsc{Mathematics and Computer Science}\\
-  &\textbf{National College of Informatics "Matei Basarab"}, Rm.Valcea\\
+%\textsc{2010-2014}&Baccalaureate in 
+%  \textsc{Mathematics and Computer Science}\\
+%  &\textbf{National College of Informatics "Matei Basarab"}, Rm.Valcea\\
 %\multicolumn{2}{c}{}\\
 \end{tabular}
 
 %Section: Computer skills
-\section{Computer Skills}
+\section{Programming Languages}
 \begin{tabular}{rl}
-\textsc{Basic:}&
-  \textsc{c}++, \textsc{g}o, \textsc{r}ust,
-  \textsc{p}erl, \textsc{j}ava, 
-  \textsc{j}ava\textsc{s}cript,
-  \textsc{a}ssembly, \textsc{g}db, 
-  \textsc{n}o\textsc{sql}, \textsc{sql}, 
-  \LaTeX\\
-\textsc{Intermediate:}&
-  \textsc{p}ython, \textsc{b}ash,
-  \textsc{l}isp, \textsc{e}macs,
-  \textsc{g}it, \textsc{m}ake, 
-  \textsc{d}ocker, \textsc{n}etworking,  
-  \textsc{e}lectronics\\ 
-\textsc{Advanced}:&
-  \textsc{c}, \textsc{l}inux, \textsc{v}im\\
-
-%\textsc{Advanced:}&\textsc{C}, \textsc{p}ython, \textsc{tcp/ip}, \textsc{v}im\\
-%\multicolumn{2}{c}{}\\
+  \textsc{Advanced}&
+    \textsc{c/c++}\\
+  \textsc{Intermediate}&
+    \textsc{p}ython, \textsc{b}ash,
+    \textsc{l}isp, \LaTeX\\
+  \textsc{Basic}&
+    \textsc{g}o, \textsc{r}ust,
+    \textsc{p}erl, \textsc{j}ava, 
+    \textsc{j}ava\textsc{s}cript,
+    \textsc{a}ssembly, \textsc{n}o\textsc{sql}, 
+    \textsc{sql}\\
+  %\textsc{Advanced:}&\textsc{C}, \textsc{p}ython, \textsc{tcp/ip}, \textsc{v}im\\
+  %\multicolumn{2}{c}{}\\
 \end{tabular}
+
+\section{Tools \& Libraries}
+\begin{tabular}{rl}
+  \textsc{Advanced}&
+    \textsc{l}inux, \textsc{v}im\\
+  \textsc{Intermediate}&
+    \textsc{e}macs, \textsc{g}it, \textsc{m}ake, 
+    \textsc{d}ocker, \textsc{n}etworking,  
+    \textsc{e}lectronics, \textsc{z}ero\textsc{mq}\\ 
+  \textsc{Basic}&
+    \textsc{g}db, \textsc{h}u\textsc{g}o \\ 
+\end{tabular}
+
 
 %Section: Scholarships and additional info
 
 %Section: Languages
 \section{Languages}
-\begin{multicols}{2}
+\begin{multicols}{3}
   \begin{tabular}{rl}
-    \textsc{Romanian:}&Native\\
-    \textsc{English:}&Advanced\\
+    \textsc{Native}&Romanian\\
   \end{tabular}
   \columnbreak
+
   \begin{tabular}{rl}
-    \textsc{Italian:}&Basic\\
-    \textsc{French:}&Basic\\
+    \textsc{Advanced}&English\\
+  \end{tabular}
+  \columnbreak
+
+  \begin{tabular}{rl}
+    \textsc{Basic}&Italian, French\\
   \end{tabular}
 \end{multicols}
 
-%Section: Interests and Activities
-\section{Interests and Activities}
-Reading, Psychology, Running, Cardistry, Programming languages, \\ 
-CLI applications, Linux, Privacy, Free Software, Open Source, Algorithms.
 \end{document}
