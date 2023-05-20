@@ -5,6 +5,7 @@
 \usepackage{titlesec} %custom \section
 \usepackage{url,parskip} %packages for formating
 \usepackage{multicol} % multiples columns
+\usepackage{ragged2e} % for alignment
 \setlength{\columnsep}{1cm} % space between columns
 \RequirePackage{color, graphicx}
 
@@ -52,21 +53,17 @@
 
 %About: About
 \section{About}
-\begin{tabular}{l}
-I'm a software engineer with a background in 
-networking and programming.\\
-Passionate about Open-source software, 
-programming languages and operating systems.\\
+\RaggedRight{I'm a software engineer with a background in 
+networking and programming.
+Passionate about Open-source software, cli applications, 
+programming languages and operating systems.
 Eager to excel in my career, 
 I'm seeking a position as a \textbf{systems engineer}.\\ 
 My mission is to contribute to the development 
-of future software infrastructure.\\
-\end{tabular}
+of future software infrastructure.}
 
-%Section: Work Experience
 \section{Work Experience}
-\begin{tabular}{r|p{11cm}}
-
+\begin{tabular}{r|p{12cm}}
 \emph{Current}
 &\textsc{Software Engineer} at \textbf{Luxoft}, Bucharest\\
 \textsc{2022}
@@ -93,7 +90,6 @@ of future software infrastructure.\\
 %\multicolumn{2}{c}{}\\
 \end{tabular}
 
-%Section: Education
 \section{Education}
 \begin{tabular}{rl}
 \textsc{2018-2020}&Master's Degree in 
@@ -114,34 +110,29 @@ of future software infrastructure.\\
   \textsc{Advanced}&
     \textsc{c/c++}\\
   \textsc{Intermediate}&
-    \textsc{p}ython, \textsc{j}ava, \textsc{b}ash,
-    \textsc{l}isp, \LaTeX\\
+    \textsc{r}ust, \textsc{p}ython, \textsc{j}ava, 
+    \textsc{b}ash, \textsc{c}lojure, \textsc{l}isp, 
+    \LaTeX\\
   \textsc{Basic}&
-    \textsc{g}o, \textsc{r}ust,
-    \textsc{p}erl,  
-    \textsc{j}ava\textsc{s}cript, \textsc{html/css},
-    \textsc{a}ssembly, \textsc{n}o\textsc{sql}, 
-    \textsc{sql}\\
-  %\textsc{Advanced:}&\textsc{C}, \textsc{p}ython, \textsc{tcp/ip}, \textsc{v}im\\
-  %\multicolumn{2}{c}{}\\
+    \textsc{g}o, \textsc{p}erl, \textsc{j}ava\textsc{s}cript, 
+    \textsc{html/css}, \textsc{a}ssembly, 
+    \textsc{n}o\textsc{sql}, \textsc{sql}\\
 \end{tabular}
 
 \section{Tools \& Libraries}
 \begin{tabular}{rl}
   \textsc{Advanced}&
     \textsc{l}inux, \textsc{v}im, \textsc{g}it,
-    \textsc{c}oreutils, \textsc{e}macs\\
+    \textsc{c}oreutils, i3, \textsc{e}macs\\
   \textsc{Intermediate}&
-     \textsc{m}ake, \textsc{d}ocker, \textsc{n}etworking,  
-    \textsc{e}lectronics, \textsc{z}ero\textsc{mq}\\ 
+     \textsc{m}ake, \textsc{g}db, \textsc{d}ocker, \textsc{z}ero\textsc{mq},
+    \textsc{h}elix, \textsc{l}eft\textsc{wm}\\ 
   \textsc{Basic}&
-    \textsc{g}db, \textsc{h}u\textsc{g}o \\ 
+    \textsc{cm}ake,  \textsc{v}algrind, \textsc{f}lat\textsc{b}uffers, 
+    \textsc{d}ocker, \textsc{h}u\textsc{g}o, 
+    \textsc{r}abbit\textsc{mq}, \textsc{d}jango \\ 
 \end{tabular}
 
-
-%Section: Scholarships and additional info
-
-%Section: Languages
 \section{Languages}
 \begin{multicols}{3}
   \begin{tabular}{rl}
