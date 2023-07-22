@@ -6,7 +6,7 @@ OBJS = GMarin_CV
 all: $(OBJS)
 
 GMarin_CV.pdf: GMarin_CV.tex 
-	pdflatex $^
+	lualatex $^
 
 clean:
 	rm -rf *.out *.aux *.log *~

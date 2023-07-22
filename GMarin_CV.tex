@@ -1,6 +1,8 @@
 \documentclass[a4paper,12pt]{article}
 
 %Packages
+\usepackage[defaultsans]{opensans}
+\usepackage[T1]{fontenc}
 \usepackage[big]{layaureo} %better A4 formating
 \usepackage{titlesec} %custom \section
 \usepackage{url,parskip} %packages for formating
@@ -13,135 +15,132 @@
 \usepackage{hyperref}
 \definecolor{linkcolour}{rgb}{0,0.2,0.6}
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+\usepackage{emoji}
+\setemojifont{Noto Color Emoji}
 
 %CV sections
-\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
-\titlespacing{\section}{0pt}{1pt}{1pt}
+\titleformat{\section}{\large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{4pt}{4pt}
+
+%Aliases
+\newcommand{\tsc}{\textsc}
+\usepackage{tikz} % Skill scale
+\newcommand\skill[2] {%
+    \ifnum#1>#2
+        $#1 > #2$
+    \else \ifnum#1<0
+        $#1 < 0$
+    \else \ifnum#2<0
+        $#2 < 0$
+    \else
+        \tikz{%
+            \ifx#20
+            \else
+                \foreach \i in {1,...,#2} {
+                    \filldraw[black!20] (\i ex,0) circle (0.4ex);
+                };
+            \fi
+            \ifx#10
+            \else
+                \foreach \i in {1,...,#1} {
+                    \filldraw[black] (\i ex,0) circle (0.4ex);
+                };
+            \fi
+        }
+        \fi
+    \fi
+\fi
+}
 
 %Main
 \begin{document}
 \pagestyle{empty}
 
 %Title
-\par
-  {\centering
-    {\Huge Gabriel \textsc{Marin}}
-    \bigskip\par
-  }
+\par {
+    {\Huge Gabriel Marin}
+    \bigskip
+}
 
 %Sections
 %Section: Personal Data
 \section{Personal Data}
-\begin{multicols}{2}
-  \begin{tabular}{rl}
-    \textsc{email:}&\href{mailto:gbrlmarn@proton.me}{gbrlmarn@proton.me}\\
-    \textsc{phone:}&\href{tel:393401143095}{+39 3401143095}\\
-    &\href{tel:40742038849}{+40 742038849}\\
-  \end{tabular}
-  \columnbreak
-  \begin{tabular}{rl}
-    \textsc{linkedin:}&\href{https://linkedin.com/in/gbrlmarn}{linkedin.com/in/gbrlmarn}\\
-    \textsc{website:}&\href{https://gbrlmarn.github.io}{gbrlmarn.github.io}\\
-    \textsc{github:}&\href{https://github.com/gbrlmarn}{github.com/gbrlmarn}\\
-  \end{tabular}
-\end{multicols}
-  %\multicolumn{2}{c}{}\\
+    \begin{tabular}{ll}
+        \emoji{email}\tsc{email:}&\href{mailto:gbrlmarn@proton.me}{gbrlmarn@proton.me}\\
+        \emoji{telephone-receiver}\tsc{phone:}
+            &\href{tel:393401143095}{+39 3401143095}\\
+            &\href{tel:40742038849}{+40 742038849}
+    \end{tabular}
+    \begin{tabular}{ll}
+        \tsc{linkedin:}&\href{https://linkedin.com/in/gbrlmarn}{linkedin.com/in/gbrlmarn}\\
+        \tsc{website:}&\href{https://gbrlmarn.github.io}{gbrlmarn.github.io}\\
+        \tsc{github:}&\href{https://github.com/gbrlmarn}{github.com/gbrlmarn}
+    \end{tabular}
 
 %About: About
 \section{About}
-\RaggedRight{I'm a software engineer with a background in 
-networking and programming.
-Passionate about Open-source software, cli applications, 
-programming languages and operating systems.
-Eager to excel in my career, 
-I'm seeking a position as a \textbf{systems engineer}.\\ 
-My mission is to contribute to the development 
-of future software infrastructure.}
+    \RaggedRight{
+        I'm a \textbf{software engineer} with a background in networking and programming, passionate about open source software, command line applications, programming languages and operating systems.\\My mission is to contribute to the development of future software infrastructure.
+    }
 
 \section{Work Experience}
-\begin{tabular}{r|p{12cm}}
-\emph{Current}
-&\textsc{Software Engineer} at \textbf{Luxoft}, Bucharest\\
-\textsc{2022}
-&\footnotesize{Done socket programming using ZeroMQ library in C/C++.}\\
-&\footnotesize{Automated environment configuration using Docker and Bash scripting.}\\
-&\footnotesize{Developed command line interface for sending/receiving serialized messages.}\\
-\multicolumn{2}{c}{}\\
-\textsc{2021-2022}
-&\textsc{Software Engineer} at \textbf{Continental}, Sibiu\\
-&\footnotesize{Worked on XML parsing and code generator tool using Java and Python.}\\
-&\footnotesize{Worked on Excel parsing using Python in Jupyter Notebook.}\\
-\multicolumn{2}{c}{}\\
-\textsc{2019-2021} 
-  &\textsc{Sys Engineer} at \textbf{Ministry of Internal Affairs}, Rm.Valcea\\
-&\footnotesize{
-  Developed scripts for task automation.}\\
-&\footnotesize{
-  Deployed and configured Radius server and Squid proxy.}\\
-%\multicolumn{2}{c}{}\\
-\textsc{2018-2019} 
-&\textsc{IT Engineer} at \textbf{Ministry of Internal Affairs}, Bucharest\\
-&\footnotesize{Provided layer I support.}\\
-&\footnotesize{Managed users for database access.}\\
-%\multicolumn{2}{c}{}\\
-\end{tabular}
+    \begin{tabular}{p{3.1cm}|l}
+        \raggedleft\emph{Current}\tsc{-2022}
+        &\tsc{Software Engineer} at \textbf{Luxoft}, Bucharest\\
+        &\footnotesize{Done socket programming using ZeroMQ library in C/C++.}\\
+        &\footnotesize{Automated environment configuration using Docker and Bash.}\\
+        &\footnotesize{Developed command line interface for sending/receiving serialized messages.}\\
+        \multicolumn{2}{c}{}\\
+        \raggedleft\tsc{2021-2022}
+        &\tsc{Software Engineer} at \textbf{Continental}, Sibiu\\
+        &\footnotesize{Worked on code generator parsing XML and Json with Java and Python.}\\
+        \multicolumn{2}{c}{}\\
+        \raggedleft\tsc{2019-2021} 
+          &\tsc{Sys Engineer} at \textbf{Ministry of Internal Affairs}, Rm.Valcea\\
+        &\footnotesize{Developed scripts for task automation.}\\
+        &\footnotesize{Deployed and configured Radius server and Squid proxy.}\\
+        \raggedleft\tsc{2018-2019} 
+        &\tsc{IT Engineer} at \textbf{Ministry of Internal Affairs}, Bucharest\\
+        &\footnotesize{Provided layer I support.}\\
+        &\footnotesize{Managed users for database access.}\\
+    \end{tabular}
 
 \section{Education}
-\begin{tabular}{rl}
-\textsc{2018-2020}&Master's Degree in 
-  \textsc{Telecommunications Engineering}\\
-  &\textbf{Military Technical Academy}, Bucharest\\
-\textsc{2014-2018}&Bachelor's Degree in
-  \textsc{Telecommunications Engineering}\\
-  &\textbf{Military Technical Academy}, Bucharest\\
-%\textsc{2010-2014}&Baccalaureate in 
-%  \textsc{Mathematics and Computer Science}\\
-%  &\textbf{National College of Informatics "Matei Basarab"}, Rm.Valcea\\
-%\multicolumn{2}{c}{}\\
+\begin{tabular}{p{3.1cm}|l}
+    \raggedleft\tsc{2018-2020}&Master's Degree in \tsc{T}elecommunications \tsc{E}ngineering\\
+        & \textbf{Military Technical Academy}, Bucharest\\
+    \raggedleft\tsc{2014-2018}&Bachelor's Degree in \tsc{T}elecommunications \tsc{E}ngineering\\
+        &\textbf{Military Technical Academy}, Bucharest\\
 \end{tabular}
 
 %Section: Computer skills
 \section{Programming Languages}
-\begin{tabular}{rl}
-  \textsc{Advanced}&
-    \textsc{c/c++}\\
-  \textsc{Intermediate}&
-    \textsc{r}ust, \textsc{p}ython, \textsc{j}ava, 
-    \textsc{b}ash, \textsc{c}lojure, \textsc{l}isp, 
-    \LaTeX\\
-  \textsc{Basic}&
-    \textsc{g}o, \textsc{p}erl, \textsc{j}ava\textsc{s}cript, 
-    \textsc{html/css}, \textsc{a}ssembly, 
-    \textsc{n}o\textsc{sql}, \textsc{sql}\\
+\begin{tabular}{p{3.1cm}|l}
+    \skill{4}{5}\tsc{P}roficient 
+        & \tsc{c/c++}\\
+    \skill{3}{5}\tsc{C}ompetent
+        & \tsc{g}o, \tsc{r}ust, \tsc{p}ython, \tsc{j}ava, \tsc{b}ash, \tsc{c}lojure, \tsc{l}isp, \LaTeX\\
+    \skill{2}{5}\tsc{B}eginner 
+        & \tsc{l}ua, \tsc{p}erl, \tsc{j}ava\tsc{s}cript, \tsc{html/css}, \tsc{a}ssembly, \tsc{n}o\tsc{sql}, \tsc{sql}\\
 \end{tabular}
 
 \section{Tools \& Libraries}
-\begin{tabular}{rl}
-  \textsc{Advanced}&
-    \textsc{l}inux, \textsc{g}it, \textsc{c}oreutils, \textsc{v}im,  i3, \textsc{e}macs\\
-  \textsc{Intermediate}&
-     \textsc{r}eg\textsc{e}xp, \textsc{m}ake, \textsc{g}db, \textsc{boost}, \textsc{d}ocker, \textsc{z}ero\textsc{mq}\\ 
-  \textsc{Basic}&
-    \textsc{cm}ake,  \textsc{v}algrind, \textsc{f}lat\textsc{b}uffers, 
-    \textsc{d}ocker, \textsc{h}u\textsc{g}o, 
-    \textsc{r}abbit\textsc{mq}, \textsc{d}jango \\ 
+\begin{tabular}{p{3.1cm}|l}
+    \skill{4}{5}\tsc{P}roficient&
+        \tsc{l}inux, \tsc{g}it, \tsc{c}oreutils, \tsc{v}im, i3, \tsc{e}macs\\
+    \skill{3}{5}\tsc{C}ompetent&
+        \tsc{r}eg\tsc{e}xp, \tsc{m}ake, \tsc{g}db, \tsc{boost}, \tsc{d}ocker, \tsc{z}ero\tsc{mq}, \tsc{o}pen\tsc{w}rt\\ 
+    \skill{2}{5}\tsc{B}eginner&
+        \tsc{cm}ake, \tsc{v}algrind, \tsc{f}lat\tsc{b}uffers, \tsc{h}u\tsc{g}o, \tsc{t}erraform, \tsc{r}abbit\tsc{mq}, \tsc{d}jango \\ 
 \end{tabular}
 
 \section{Languages}
-\begin{multicols}{3}
-  \begin{tabular}{rl}
-    \textsc{Native}&Romanian\\
-  \end{tabular}
-  \columnbreak
-
-  \begin{tabular}{rl}
-    \textsc{Advanced}&English\\
-  \end{tabular}
-  \columnbreak
-
-  \begin{tabular}{rl}
-    \textsc{Basic}&Italian, French\\
-  \end{tabular}
-\end{multicols}
-
+    \begin{tabular}{p{3.1cm}|l}
+        \skill{5}{5}\tsc{E}xpert&
+            \tsc{r}omanian\\
+        \skill{4}{5}\tsc{P}roficient&
+            \tsc{e}nglish\\
+        \skill{2}{5}\tsc{B}eginner&
+            \tsc{i}talian, \tsc{f}rench
+    \end{tabular}
 \end{document}
