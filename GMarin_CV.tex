@@ -8,20 +8,20 @@
 \usepackage{url,parskip} %packages for formating
 \usepackage{multicol} % multiples columns
 \usepackage{ragged2e} % for alignment
-\setlength{\columnsep}{1cm} % space between columns
-\RequirePackage{color, graphicx}
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{svg}
+\usepackage{emoji}
+\setemojifont{Noto Color Emoji}
 
-%Setup hyperref package, and colours for links
 \usepackage{hyperref}
 \definecolor{linkcolour}{rgb}{0,0.2,0.6}
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
-\usepackage{emoji}
-\setemojifont{Noto Color Emoji}
-\usepackage{svg}
 
 %CV sections
 \titleformat{\section}{\large\scshape\raggedright}{}{0em}{}[\titlerule]
 \titlespacing{\section}{0pt}{4pt}{4pt}
+\setlength{\columnsep}{1cm} % space between columns
 
 %Aliases
 \newcommand{\tsc}{\textsc}
@@ -81,7 +81,7 @@
 %About: About
 \section{About}
     \RaggedRight{
-        I'm a \textbf{software engineer} with a background in networking and programming, passionate about open source software, command line applications, programming languages and operating systems.\\My mission is to contribute to the development of future software infrastructure.
+        I'm a \textbf{software engineer} with a background in networking and programming, passionate about open source software, command line applications, programming languages, distributed computing and operating systems.\\My mission is to contribute to the development of future software infrastructure.
     }
 
 \section{Work Experience}
@@ -90,20 +90,21 @@
         &\tsc{Software Engineer} at \textbf{Luxoft}, Bucharest\\
         &\footnotesize{Done socket programming using ZeroMQ library in C/C++.}\\
         &\footnotesize{Automated environment configuration using Docker and Bash.}\\
+        &\footnotesize{Prototyped integration tests using Golang and Clojure.}\\
         &\footnotesize{Developed command line interface for sending/receiving serialized messages.}\\
         \multicolumn{2}{c}{}\\
         \raggedleft\tsc{2021-2022}
         &\tsc{Software Engineer} at \textbf{Continental}, Sibiu\\
-        &\footnotesize{Worked on code generator parsing XML and Json with Java and Python.}\\
+        &\footnotesize{Worked on code generator, parsing XML and Json with Java and Python.}\\
         \multicolumn{2}{c}{}\\
         \raggedleft\tsc{2019-2021} 
           &\tsc{Sys Engineer} at \textbf{Ministry of Internal Affairs}, Rm.Valcea\\
-        &\footnotesize{Developed scripts for task automation.}\\
+        &\footnotesize{Developed scripts for task automation with PowerShell.}\\
         &\footnotesize{Deployed and configured Radius server and Squid proxy.}\\
         \raggedleft\tsc{2018-2019} 
         &\tsc{IT Engineer} at \textbf{Ministry of Internal Affairs}, Bucharest\\
         &\footnotesize{Provided layer I support.}\\
-        &\footnotesize{Managed users for database access.}\\
+        &\footnotesize{Managed users access in Oracle SQL database.}\\
     \end{tabular}
 
 \section{Education}
@@ -120,19 +121,19 @@
     \skill{4}{5}\tsc{P}roficient 
         & \tsc{c/c++}\\
     \skill{3}{5}\tsc{C}ompetent
-        & \tsc{g}o, \tsc{r}ust, \tsc{p}ython, \tsc{j}ava, \tsc{b}ash, \tsc{c}lojure, \tsc{l}isp, \LaTeX\\
+        & \tsc{g}o, \tsc{r}ust, \tsc{p}ython, \tsc{j}ava, \tsc{b}ash, \tsc{c}lojure, \tsc{l}isp\\
     \skill{2}{5}\tsc{B}eginner 
-        & \tsc{l}ua, \tsc{p}erl, \tsc{j}ava\tsc{s}cript, \tsc{html/css}, \tsc{a}ssembly, \tsc{n}o\tsc{sql}, \tsc{sql}\\
+        & \tsc{e}rlang, \tsc{e}lixir, \tsc{l}ua, \tsc{p}erl, \tsc{j}ava\tsc{s}cript, \tsc{a}ssembly, \tsc{sql}\\
 \end{tabular}
 
 \section{Tools \& Libraries}
 \begin{tabular}{p{3.1cm}|l}
     \skill{4}{5}\tsc{P}roficient&
-        \tsc{l}inux, \tsc{g}it, \tsc{c}oreutils, \tsc{v}im, i3, \tsc{e}macs\\
+        \tsc{l}inux, \tsc{g}it, \tsc{c}oreutils, \tsc{v}im, \tsc{e}macs, \tsc{r}eg\tsc{e}xp, \LaTeX, i3\\
     \skill{3}{5}\tsc{C}ompetent&
-        \tsc{r}eg\tsc{e}xp, \tsc{m}ake, \tsc{g}db, \tsc{boost}, \tsc{d}ocker, \tsc{z}ero\tsc{mq}, \tsc{o}pen\tsc{w}rt\\ 
+        \tsc{z}ero\tsc{mq}, \tsc{d}ocker, \tsc{g}db, \tsc{boost}, \tsc{m}ake, \tsc{o}pen\tsc{w}rt, \tsc{html/css}\\ 
     \skill{2}{5}\tsc{B}eginner&
-        \tsc{cm}ake, \tsc{v}algrind, \tsc{f}lat\tsc{b}uffers, \tsc{h}u\tsc{g}o, \tsc{t}erraform, \tsc{r}abbit\tsc{mq}, \tsc{d}jango \\ 
+        \tsc{r}abbit\tsc{mq}, \tsc{cm}ake, \tsc{v}algrind, \tsc{f}lat\tsc{b}uffers, \tsc{h}u\tsc{g}o, \tsc{t}erraform, \tsc{d}jango \\ 
 \end{tabular}
 
 \section{Languages}
