@@ -1,4 +1,3 @@
-
 #+TITLE: Curriculum vitae
 #+AUTHOR: Gabriel Marin
 #+EMAIL: gbrlmarn@proton.me
@@ -8,8 +7,8 @@
 #+GITLAB: gbrlmarn
 #+LINKEDIN: gbrlmarn
 #+PHOTO: gbrlmarn.jpg
-
 # CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+
 #+CVSTYLE: casual
 # CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
 #+CVCOLOR: green

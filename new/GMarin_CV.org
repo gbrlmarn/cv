@@ -1,0 +1,51 @@
+#+SETUPFILE: template.org
+* */(Gabriel Marin)/*
+  #+ATTR_LATEX: :environment tabular :align {p{2.5cm}p{13cm}}
+| Email             | [[mailto:gbrlmarn@proton.me][gbrlmarn@proton.me]]  |
+| Github            | [[https://github.com/gbrlmarn][github.com/gbrlmarn]] |
+| Site              | [[https://gbrlmarn.github.io][gbrlmarn.github.io]]  |
+* About me 
+I'm a *software engineer* with a background in networking and 
+programming, passionate about open source software, 
+command line applications, programming languages, 
+distributed computing and operating systems.
+My mission is to contribute to the development of future 
+software infrastructure.
+
+* Programming Languages
+  #+ATTR_LATEX: :environment tabular :align {p{2.5cm}|p{13cm}}
+| Proficient | C/C++, Clojure                                    |
+| Competent  | Go, Scheme, Common Lisp, Python, Java, JavaScript |
+| Beginner   | PowerShell, Shell, Perl, Elixir, Erlang           |
+* Tools & Libraries
+  #+ATTR_LATEX: :environment tabular :align {p{2.5cm}|p{13cm}}
+| Proficient | Linux, Networking, /Emacs/, Org, Vim, Git, Tmux, |
+| Competent  | Docker, Make, Leiningen, Guix                    |
+| Beginner   | HTML/CSS, Django, React, LaTeX, PlantUML         |
+* Languages
+  #+ATTR_LATEX: :environment tabular :align {p{2.5cm}|p{13cm}}
+| Native   | Romanian         |
+| Expert   | English          |
+| Beginner | Italian, French  |
+* Employment
+  #+ATTR_LATEX: :environment tabular :align {p{2.5cm}|p{13cm}}
+| 2022-Current | *Software Engineer at Luxoft, Bucharest*                             |
+|              | Done socket programming using ZeroMQ library in C/C++.               |
+|              | Automated environment configuration using Docker and Bash.           |
+|              | Prototyped integration tests using Golang and Clojure.               |
+|              | Developed command line interface for sending/receiving messages.     |
+|    2021-2022 | *Software Engineer at Continental, Sibiu*                            |
+|              | Worked on code generator, parsing XML and Json with Java and Python. |
+|    2019-2021 | *System Engineer at Ministry of Internal Affairs, Rm.Valcea*         |
+|              | Developed scripts for task automation with PowerShell.               |
+|              | Deployed and configured Radius server and Squid proxy.               |
+|    2018-2019 | *Middleware Engineer at Ministry of Internal Affairs, Bucharest*     |
+|              | Provided layer 1 support.                                            |
+|              | Managed users access in Oracle SQL databse.                          |
+ 
+* Education
+  #+ATTR_LATEX: :environment tabular :align {p{2.5cm}|p{13cm}}
+| 2018-2020 | Master's in Telecommunications Engineering at   |
+|           | Military Technical Academy, Bucharest           |
+| 2014-2018 | Bachelor's in Telecommunications Engineering at |
+|           | Military Technical Academy, Bucharest           |
