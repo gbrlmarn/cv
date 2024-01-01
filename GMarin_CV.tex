@@ -24,7 +24,6 @@
 \setlength{\columnsep}{1cm} % space between columns
 
 %Aliases
-\newcommand{\tsc}{\textsc}
 \usepackage{tikz} % Skill scale
 \newcommand\skill[2] {%
     \ifnum#1>#2
@@ -67,15 +66,19 @@
 %Section: Personal Data
 \section{Personal Data}
     \begin{tabular}{ll}
-        \emoji{email}\tsc{email:}&\href{mailto:gbrlmarn@proton.me}{gbrlmarn@proton.me}\\
-        \emoji{telephone-receiver}\tsc{phone:}
-            &\href{tel:+40742038849}{+40 7420 38849}\\
+        \emoji{email}Email:&
+            \href{mailto:gbrlmarn@proton.me}{gbrlmarn@proton.me}\\
+        \emoji{telephone-receiver}Phone:&
+            \href{tel:+40742038849}{+40 7420 38849}\\
         \\
     \end{tabular}
     \begin{tabular}{ll}
-        \includesvg[width=13pt]{./svg/linkedin.svg}\tsc{linkedin:}&\href{https://linkedin.com/in/gbrlmarn}{linkedin.com/in/gbrlmarn}\\
-        \includesvg[width=13pt]{./svg/github.svg}\tsc{github:}&\href{https://github.com/gbrlmarn}{github.com/gbrlmarn}\\
-        \includesvg[width=13pt]{./svg/gbrlmarn.svg}\tsc{website:}&\href{https://gbrlmarn.github.io}{gbrlmarn.github.io}
+        \includesvg[width=13pt]{./svg/linkedin.svg}Linkedin:&
+            \href{https://linkedin.com/in/gbrlmarn}{linkedin.com/in/gbrlmarn}\\
+        \includesvg[width=13pt]{./svg/github.svg}Github:&
+            \href{https://github.com/gbrlmarn}{github.com/gbrlmarn}\\
+        \includesvg[width=13pt]{./svg/gbrlmarn.svg}Website:&
+            \href{https://gbrlmarn.github.io}{gbrlmarn.github.io}
     \end{tabular}
 
 %About: About
@@ -86,63 +89,73 @@
 
 \section{Work Experience}
     \begin{tabular}{p{3.1cm}|l}
-        \raggedleft\tsc{2022-}\emph{Current}
-        &\tsc{Software Engineer} at \textbf{Luxoft}, Bucharest\\
+        \raggedleft2022-\emph{Current}
+        &Software Engineer at \textbf{Luxoft}, Bucharest\\
         &\footnotesize{Done socket programming using ZeroMQ library in C/C++.}\\
         &\footnotesize{Automated environment configuration using Docker and Bash.}\\
         &\footnotesize{Prototyped integration tests using Golang and Clojure.}\\
         &\footnotesize{Developed command line interface for sending/receiving serialized messages.}\\
         \multicolumn{2}{c}{}\\
-        \raggedleft\tsc{2021-2022}
-        &\tsc{Software Engineer} at \textbf{Continental}, Sibiu\\
+        \raggedleft2021-2022
+        &Software Engineer at \textbf{Continental}, Sibiu\\
         &\footnotesize{Worked on code generator, parsing XML and Json with Java and Python.}\\
         \multicolumn{2}{c}{}\\
-        \raggedleft\tsc{2019-2021} 
-          &\tsc{Sys Engineer} at \textbf{Ministry of Internal Affairs}, Rm.Valcea\\
+        \raggedleft2019-2021 
+          &Sys Engineer at \textbf{Ministry of Internal Affairs}, Rm.Valcea\\
         &\footnotesize{Developed scripts for task automation with PowerShell.}\\
         &\footnotesize{Deployed and configured Radius server and Squid proxy.}\\
-        \raggedleft\tsc{2018-2019} 
-        &\tsc{IT Engineer} at \textbf{Ministry of Internal Affairs}, Bucharest\\
+        \raggedleft2018-2019 
+        &IT Engineer at \textbf{Ministry of Internal Affairs}, Bucharest\\
         &\footnotesize{Provided layer I support.}\\
         &\footnotesize{Managed users access in Oracle SQL database.}\\
     \end{tabular}
 
 \section{Education}
 \begin{tabular}{p{3.1cm}|l}
-    \raggedleft\tsc{2018-2020}&Master's Degree in \tsc{T}elecommunications \tsc{E}ngineering\\
+    \raggedleft2018-2020&
+        Master's Degree in Telecommunications Engineering\\
         & \textbf{Military Technical Academy}, Bucharest\\
-    \raggedleft\tsc{2014-2018}&Bachelor's Degree in \tsc{T}elecommunications \tsc{E}ngineering\\
+    \raggedleft2014-2018&
+        Bachelor's Degree in Telecommunications Engineering\\
         &\textbf{Military Technical Academy}, Bucharest\\
 \end{tabular}
 
 %Section: Computer skills
 \section{Programming Languages}
 \begin{tabular}{p{3.1cm}|l}
-    \skill{4}{5}\tsc{P}roficient 
-        & \tsc{c/c++}\\
-    \skill{3}{5}\tsc{C}ompetent
-        & \tsc{g}o, \tsc{r}ust, \tsc{p}ython, \tsc{j}ava, \tsc{b}ash, \tsc{c}lojure, \tsc{l}isp\\
-    \skill{2}{5}\tsc{B}eginner 
-        & \tsc{e}rlang, \tsc{e}lixir, \tsc{l}ua, \tsc{p}erl, \tsc{j}ava\tsc{s}cript, \tsc{a}ssembly, \tsc{sql}\\
+    \skill{4}{5}Proficient 
+        &C/C++, Go\\
+    \skill{3}{5}Competent&
+        Rust, Python, Java, 
+        Bash, Clojure, Lisp\\
+    \skill{2}{5}Beginner&
+        Erlang, Elixir, Lua, 
+        Perl, Javascript, Assembly, 
+        SQL\\
 \end{tabular}
 
 \section{Tools \& Libraries}
 \begin{tabular}{p{3.1cm}|l}
-    \skill{4}{5}\tsc{P}roficient&
-        \tsc{gnu/l}inux, \tsc{g}it, \tsc{c}oreutils, \tsc{v}im, \tsc{e}macs, \tsc{r}eg\tsc{e}xp, \LaTeX, i3\\
-    \skill{3}{5}\tsc{C}ompetent&
-        \tsc{z}ero\tsc{mq}, \tsc{d}ocker, \tsc{g}db, \tsc{boost}, \tsc{m}ake, \tsc{o}pen\tsc{w}rt, \tsc{html/css}\\ 
-    \skill{2}{5}\tsc{B}eginner&
-        \tsc{r}abbit\tsc{mq}, \tsc{cm}ake, \tsc{v}algrind, \tsc{f}lat\tsc{b}uffers, \tsc{h}u\tsc{g}o, \tsc{t}erraform, \tsc{d}jango \\ 
+    \skill{4}{5}Proficient&
+        GNU/Linux, Git, Coreutils, 
+        Vim, ZeroMQ, Regexp, 
+        \LaTeX, Emacs\\
+    \skill{3}{5}Competent&
+        Docker, Gdb, Boost, 
+        Make, CMake, Openwrt, 
+        HTML/CSS\\ 
+    \skill{2}{5}Beginner&
+        RabbitMQ, Valgrind, Flatbuffers, 
+        Hugo, Terraform, Django\\ 
 \end{tabular}
 
 \section{Languages}
     \begin{tabular}{p{3.1cm}|l}
-        \skill{5}{5}\tsc{E}xpert&
-            \tsc{r}omanian\\
-        \skill{4}{5}\tsc{P}roficient&
-            \tsc{e}nglish\\
-        \skill{2}{5}\tsc{B}eginner&
-            \tsc{i}talian, \tsc{f}rench
+        \skill{5}{5}Expert&
+            Romanian\\
+        \skill{4}{5}Proficient&
+            English\\
+        \skill{2}{5}Beginner&
+            Italian, French
     \end{tabular}
 \end{document}
