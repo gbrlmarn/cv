@@ -1,11 +1,11 @@
 CC = pdflatex
-OBJS = GMarin_CV
+OBJS = marincv
 
 .PHONY: all clean
 
 all: $(OBJS)
 
-GMarin_CV.pdf: GMarin_CV.tex 
+marincv.pdf: marincv.tex 
 	lualatex --shell-escape $^
 
 clean:
