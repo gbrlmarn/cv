@@ -1,11 +1,11 @@
 \documentclass[a4paper,12pt]{article}
 
-%Packages
+% Packages
 \usepackage[defaultsans]{opensans}
 \usepackage[T1]{fontenc}
-\usepackage[big]{layaureo} %better A4 formating
-\usepackage{titlesec} %custom \section
-\usepackage{url,parskip} %packages for formating
+\usepackage[big]{layaureo} % better A4 formating
+\usepackage{titlesec} % custom \section
+\usepackage{url,parskip} % packages for formating
 \usepackage{multicol} % multiples columns
 \usepackage{ragged2e} % for alignment
 \usepackage{color}
@@ -18,144 +18,141 @@
 \definecolor{linkcolour}{rgb}{0,0.2,0.6}
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
 
-%CV sections
+% CV sections
 \titleformat{\section}{\large\scshape\raggedright}{}{0em}{}[\titlerule]
 \titlespacing{\section}{0pt}{4pt}{4pt}
 \setlength{\columnsep}{1cm} % space between columns
 
-%Aliases
+% Aliases
 \usepackage{tikz} % Skill scale
-\newcommand\skill[2] {%
-    \ifnum#1>#2
-        $#1 > #2$
-    \else \ifnum#1<0
-        $#1 < 0$
-    \else \ifnum#2<0
-        $#2 < 0$
+\newcommand\skill[2] {
+  \ifnum#1>#2
+  $#1 > #2$
+  \else \ifnum#1<0
+  $#1 < 0$
+  \else \ifnum#2<0
+  $#2 < 0$
+  \else
+  \tikz{
+    \ifx#20
     \else
-        \tikz{%
-            \ifx#20
-            \else
-                \foreach \i in {1,...,#2} {
-                    \filldraw[black!20] (\i ex,0) circle (0.4ex);
-                };
-            \fi
-            \ifx#10
-            \else
-                \foreach \i in {1,...,#1} {
-                    \filldraw[black] (\i ex,0) circle (0.4ex);
-                };
-            \fi
-        }
-        \fi
+    \foreach \i in {1,...,#2} {
+      \filldraw[black!20] (\i ex,0) circle (0.4ex);
+    };
     \fi
-\fi
+    \ifx#10
+    \else
+    \foreach \i in {1,...,#1} {
+      \filldraw[black] (\i ex,0) circle (0.4ex);
+    };
+    \fi
+  }
+  \fi
+  \fi
+  \fi
 }
 
-%Main
+% Main
 \begin{document}
 \pagestyle{empty}
 
-%Title
+% Title
 \par {
-    {\Huge Marin Gabriel}
-    \bigskip
+  {\Huge Marin Gabriel}
+  \bigskip
 }
 
-%Sections
-%Section: Personal Data
+% Sections
+% Personal Data
 \section{Personal Data}
-    \begin{tabular}{ll}
-        \emoji{email}
-            \href{mailto:marin.gabriel@protonmail.com}{marin.gabriel@protonmail.com}\\
-        \emoji{telephone-receiver}
-            \href{tel:+40742038849}{+40 7420 38849}\\
-        \\
-    \end{tabular}
-    \begin{tabular}{ll}
-        \includesvg[width=13pt]{./svg/linkedin.svg}
-            \href{https://linkedin.com/in/maringabriel}{linkedin.com/in/maringabriel}\\
-        \includesvg[width=13pt]{./svg/github.svg}
-            \href{https://github.com/marinmgabriel}{github.com/marinmgabriel}\\
-        \includesvg[width=13pt]{./svg/gbrlmarn.svg}
-            \href{https://marinmgabriel.github.io}{marinmgabriel.github.io}
-    \end{tabular}
+\begin{tabular}{ll}
+  \emoji{email}
+  \href{mailto:marin.gabriel@protonmail.com}{marin.gabriel@protonmail.com}\\
+  \emoji{telephone-receiver}
+  \href{tel:+40742038849}{+40 7420 38849}\\
+  \\ % Empty line for good align
+\end{tabular}
+\begin{tabular}{ll}
+  \includesvg[width=13pt]{./svg/linkedin.svg}
+  \href{https://linkedin.com/in/maringabriel}{linkedin.com/in/maringabriel}\\
+  \includesvg[width=13pt]{./svg/github.svg}
+  \href{https://github.com/marinmgabriel}{github.com/marinmgabriel}\\
+  \includesvg[width=13pt]{./svg/gbrlmarn.svg}
+  \href{https://marinmgabriel.github.io}{marinmgabriel.github.io}
+\end{tabular}
 
-%About: About
+% About
 \section{About}
-    \RaggedRight{
-        I'm a \textbf{software engineer} with a background in networking and programming, passionate about open-source software, command-line applications, programming languages and operating systems.\\My mission is to contribute to the development of future software infrastructure.
-    }
+\RaggedRight {
+  Hello, I'm a \textbf{software engineer} with a background in networking and programming,
+  passionate about open-source software and programming languages.\\
+  My mission is to contribute to the development of future software infrastructure.
+}
 
+% Work Experience
 \section{Work Experience}
-    \begin{tabular}{p{3.1cm}|l}
-        \raggedleft2022-\emph{Current}
-        &Software Engineer at \textbf{Luxoft}, Bucharest\\
-        &\footnotesize{Done socket programming using ZeroMQ library in C/C++.}\\
-        &\footnotesize{Automated environment configuration using Docker and Bash.}\\
-        &\footnotesize{Writed integration tests using Golang and Clojure.}\\
-        &\footnotesize{Developed command line interface for sending/receiving serialized messages.}\\
-        \multicolumn{2}{c}{}\\
-        \raggedleft2021-2022
-        &Software Engineer at \textbf{Continental}, Sibiu\\
-        &\footnotesize{Worked on code generator, parsing XML and Json with Java and Python.}\\
-        \multicolumn{2}{c}{}\\
-        \raggedleft2019-2021 
-          &Sys Engineer at \textbf{Ministry of Internal Affairs}, Rm.Valcea\\
-        &\footnotesize{Developed scripts for task automation with PowerShell.}\\
-        &\footnotesize{Deployed and configured Radius server and Squid proxy.}\\
-        \raggedleft2018-2019 
-        &IT Engineer at \textbf{Ministry of Internal Affairs}, Bucharest\\
-        &\footnotesize{Provided layer I support.}\\
-        &\footnotesize{Managed users access in Oracle SQL database.}\\
-    \end{tabular}
+\begin{tabular}{p{3.1cm}|l}
+  \raggedleft2022-\emph{Current}
+  &Software Engineer at \textbf{Luxoft}, Bucharest\\
+  &\footnotesize{Done socket programming using ZeroMQ library in C/C++.}\\
+  &\footnotesize{Automated environment configuration using Docker and Bash.}\\
+  &\footnotesize{Wrote integration tests using Golang and Clojure.}\\
+  &\footnotesize{Developed command line interface for sending/receiving serialized messages.}\\
+  &\footnotesize{Developed certificate viewer in C++ using OpenSSL API.}\\
+  \multicolumn{2}{c}{}\\
+  \raggedleft2021-2022
+  &Software Engineer at \textbf{Continental}, Sibiu\\
+  &\footnotesize{Worked on code generator, parsing XML and JSON with Java and Python.}\\
+  \multicolumn{2}{c}{}\\
+  \raggedleft2019-2021 
+  &Sys Engineer at \textbf{Ministry of Internal Affairs}, Rm.Valcea\\
+  &\footnotesize{Developed scripts for task automation with PowerShell.}\\
+  &\footnotesize{Deployed and configured Radius server and Squid proxy.}\\
+  \raggedleft2018-2019 
+  &IT Engineer at \textbf{Ministry of Internal Affairs}, Bucharest\\
+  &\footnotesize{Provided layer I support.}\\
+  &\footnotesize{Managed users access in Oracle SQL database.}\\
+\end{tabular}
 
+% Education
 \section{Education}
 \begin{tabular}{p{3.1cm}|l}
-    \raggedleft2018-2020&
-        Master's Degree in Telecommunications Engineering\\
-        &\textbf{Military Technical Academy}, Bucharest\\
-    \raggedleft2014-2018&
-        Bachelor's Degree in Telecommunications Engineering\\
-        &\textbf{Military Technical Academy}, Bucharest\\
+  \raggedleft2018-2020&
+  Master's Degree in Telecommunications Engineering\\
+  &\textbf{Military Technical Academy}, Bucharest\\
+  \raggedleft2014-2018&
+  Bachelor's Degree in Telecommunications Engineering\\
+  &\textbf{Military Technical Academy}, Bucharest\\
 \end{tabular}
 
 %Section: Computer skills
 \section{Programming Languages}
 \begin{tabular}{p{3.1cm}|l}
-    \skill{4}{5}Proficient 
-        &C/C++, Go\\
-    \skill{3}{5}Competent&
-        Rust, Python, Java, 
-        Bash, Clojure, Lisp\\
-    \skill{2}{5}Beginner&
-        Erlang, Elixir, Lua, 
-        Perl, Javascript, Assembly, 
-        SQL\\
+  \skill{4}{5}Proficient 
+  &C/C++, Go\\
+  \skill{3}{5}Competent&
+  Rust, Python, Java, Bash, Clojure, Lisp\\
+  \skill{2}{5}Beginner&
+  Erlang, Elixir, Lua, Perl, JavaScript, Assembly, SQL\\
 \end{tabular}
 
 \section{Tools \& Libraries}
 \begin{tabular}{p{3.1cm}|l}
-    \skill{4}{5}Proficient&
-        GNU/Linux, Git, Coreutils, 
-        Vim, ZeroMQ, Regexp, 
-        \LaTeX, Emacs\\
-    \skill{3}{5}Competent&
-        Docker, Gdb, Boost, 
-        Make, CMake, Openwrt, 
-        HTML/CSS\\ 
-    \skill{2}{5}Beginner&
-        RabbitMQ, Valgrind, Flatbuffers, 
-        Hugo, Terraform, Django\\ 
+  \skill{4}{5}Proficient&
+  GNU/Linux, Git, Coreutils, Vim, ZeroMQ, Regexp, \LaTeX, Emacs\\
+  \skill{3}{5}Competent&
+  Docker, GDB, Boost, Make, CMake, OpenSSL, OpenWrt, HTML/CSS\\ 
+  \skill{2}{5}Beginner&
+  RabbitMQ, Valgrind, FlatBuffers, Hugo, Terraform, Django\\ 
 \end{tabular}
 
 \section{Languages}
-    \begin{tabular}{p{3.1cm}|l}
-        \skill{5}{5}Expert&
-            Romanian\\
-        \skill{4}{5}Proficient&
-            English\\
-        \skill{2}{5}Beginner&
-            Italian, French
-    \end{tabular}
+\begin{tabular}{p{3.1cm}|l}
+  \skill{5}{5}Expert&
+  Romanian\\
+  \skill{4}{5}Proficient&
+  English\\
+  \skill{2}{5}Beginner&
+  Italian, French
+\end{tabular}
 \end{document}
