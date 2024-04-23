@@ -1,9 +1,9 @@
 #+SETUPFILE: template.org
 * *Gabriel Marin*
 #+ATTR_LATEX: :environment tabular :align {p{2.5cm}p{13cm}}
-| Email:            | [[mailto:gbrlmarn@proton.me][gbrlmarn@proton.me]]  |
-| Github:           | [[https://github.com/gbrlmarn][github.com/gbrlmarn]] |
-| Site:             | [[https://gbrlmarn.github.io][gbrlmarn.github.io]]  |
+| Email:  | [[mailto:marin.gabriel@protonmail.com][marin.gabriel@protonmail.com]] |
+| Github: | [[https://github.com/marinmgabriel][github.com/marinmgabriel]]     |
+| Site:   | [[https://marinmgabriel.github.io][marinmgabriel.github.io]]      |
 * About me 
 I'm a *software engineer* with a background in networking 
 and programming, passionate about programming languages,
