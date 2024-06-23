@@ -1,51 +1,51 @@
 #+SETUPFILE: template.org
 * *Gabriel Marin*
 #+ATTR_LATEX: :environment tabular :align {p{2.5cm}p{13cm}}
-| Email:  | [[mailto:marin.gabriel@protonmail.com][marin.gabriel@protonmail.com]] |
-| Github: | [[https://github.com/marinmgabriel][github.com/marinmgabriel]]     |
-| Site:   | [[https://marinmgabriel.github.io][marinmgabriel.github.io]]      |
-* About me 
+| Email:    | [[mailto:marin.gabriel@protonmail.com][marin.gabriel@protonmail.com]] |
+| Linkedin: | [[https://linkedin.com/in/gbrlmarn][linkedin.com/in/gbrlmarn]]     |
+| Github:   | [[https://github.com/gbrlmarn][github.com/gbrlmarn]]          |
+| Site:     | [[https://gbrlmarn.github.io][gbrlmarn.github.io]]           |
+** About me
 I'm a *software engineer* with a background in networking 
 and programming, passionate about programming languages,
-open source software and operating systems.\\
-My mission is to contribute to the development of future 
-software infrastructure.
-
-* Employment
-  #+ATTR_LATEX: :environment tabular :align {p{2.5cm}|p{13cm}}
-| 2022-Current | *Software Engineer* at Luxoft, Bucharest                             |
+open source software and operating systems.
+** Employment
+#+ATTR_LATEX: :environment tabular :align {p{2.5cm}|p{13cm}}
+| 2022-Present | *Software Engineer* at Luxoft, Bucharest                             |
 |              | Maintained project building environment using CMake.                 |
 |              | Done socket programming using ZeroMQ library in C/C++.               |
 |              | Automated environment configuration using Docker and Bash.           |
 |              | Created integration tests using Golang and Clojure.                  |
 |              | Developed command line interface for sending/receiving messages.     |
+#+ATTR_LATEX: :environment tabular :align {p{2.5cm}|p{13cm}}
 |    2021-2022 | *Software Engineer* at Continental, Sibiu                            |
 |              | Worked on code generator, parsing XML and Json with Java and Python. |
+#+ATTR_LATEX: :environment tabular :align {p{2.5cm}|p{13cm}}
 |    2019-2021 | *System Engineer* at Ministry of Internal Affairs, Rm.Valcea         |
 |              | Developed scripts for task automation with PowerShell.               |
 |              | Deployed and configured Radius server and Squid proxy.               |
 |    2018-2019 | *Middleware Engineer* at Ministry of Internal Affairs, Bucharest     |
 |              | Provided layer 1 support.                                            |
 |              | Managed users access in Oracle SQL database.                         |
- 
-* Education
+** Education
   #+ATTR_LATEX: :environment tabular :align {p{2.5cm}|p{13cm}}
 | 2018-2020 | *Master's in Telecommunications Engineering* at   |
 |           | /Military Technical Academy/, Bucharest           |
 | 2014-2018 | *Bachelor's in Telecommunications Engineering* at |
 |           | /Military Technical Academy/, Bucharest           |
-* Programming Languages
+** Programming Languages
   #+ATTR_LATEX: :environment tabular :align {p{2.5cm}|p{13cm}}
 | Proficient | C/C++, Go, /Clojure/                                |
 | Competent  | Scheme, Common Lisp, Bash, Python, Java, JavaScript |
 | Beginner   | Rust, SQL, PowerShell, Perl, Elixir, Erlang         |
-* Tools & Libraries
-  #+ATTR_LATEX: :environment tabular :align {p{2.5cm}|p{13cm}}
+** Tools & Libraries
+#+ATTR_LATEX: :environment tabular :align {p{2.5cm}|p{13cm}}
 | Proficient | Linux, /Emacs/, Coreutils, Vim, Git, CMake, Org, Tmux         |
 | Competent  | LaTeX, Docker, Make, ZeroMQ, Hugo, Leiningen, Babashka, Guix  |
 | Beginner   | HTML/CSS, Django, React, Maven, PlantUML, Terraform, RabbitMQ |
-* Languages
-  #+ATTR_LATEX: :environment tabular :align {p{2.5cm}|p{13cm}}
-| Native   | Romanian         |
-| Expert   | English          |
-| Beginner | Italian, French  |
+** Languages
+#+ATTR_LATEX: :environment tabular :align {p{2.5cm}|p{13cm}}
+| Native       | Romanian |
+| Expert       | English  |
+| Intermediate | Italian  |
+| Beginner     | French   |

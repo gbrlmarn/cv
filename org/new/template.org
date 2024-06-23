@@ -1,5 +1,5 @@
 #+DATE:
-#+OPTIONS: toc:nil num:nil author:nil email:1
+#+OPTIONS: toc:nil num:nil author:nil email:nil
 #+LATEX_CLASS:article
 #+LATEX_CLASS_OPTIONS:[a4paper,12pt]
 
@@ -23,9 +23,11 @@
 #+LATEX_HEADER:\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
 
 # Headings
-#+LATEX_HEADER:\titleformat{\section}{\large\scshape\raggedright}{}{0em}{}[\titlerule]
+#+LATEX_HEADER:\titleformat{\section}{\Huge\scshape\raggedright}{}{0em}{}[\titlerule]
 #+LATEX_HEADER:\titlespacing{\section}{0pt}{4pt}{4pt}
 #+LATEX_HEADER:\setlength{\columnsep}{1cm} % space between columns
 
 # Subheadings
-#+LATEX_HEADER:\titleformat{\subsection}{\normalsize\scshape\raggedright}{}{0em}{}
+#+LATEX_HEADER:\titleformat{\subsection}{\large\scshape\raggedright}{}{0em}{}[\titlerule]
+#+LATEX_HEADER:\titlespacing{\subsection}{0pt}{4pt}{4pt}
+#+LATEX_HEADER:\setlength{\columnsep}{1cm} % space between columns
