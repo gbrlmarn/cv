@@ -1,0 +1,81 @@
+\documentclass[11pt,a4paper]{moderncv}
+
+% moderncv themes
+%\moderncvtheme[blue]{casual}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+\moderncvtheme[green]{casual}                % idem
+
+% character encoding
+\usepackage{ucs}
+\usepackage[utf8x]{inputenc}
+\usepackage[english]{babel}
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+% personal data
+\firstname{Gabriel}
+\familyname{Marin}
+
+\title{Curriculum Vitae}             % optional, remove the line if not wanted
+%\address{}{}                         % optional, remove the line if not wanted
+%\mobile{}                            % optional, remove the line if not wanted
+%\phone{}                             % optional, remove the line if not wanted
+\email{marin.gabriel@protonmail.com} % optional, remove the line if not wanted
+%\extrainfo{} % optional, remove the line if not wanted
+%\photo[64pt]{picture}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+
+\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+
+
+% content
+\begin{document}
+\maketitle
+
+\section{Education}
+
+\cventry{2018--2020}{Master of Science}{Military Technical Academy of Bucharest, Faculty of Electronics and Telecommunications}{Bucharest}{\textit{}}{Master Thesis: ``Wireless analyzer''}
+\cventry{2014--2018}{Bachelor of Science}{Military Technical Academy of Bucharest, Faculty of Electronics and Telecommunications}{Bucharest}{\textit{}}{Bachelor Thesis: ``Elimination of interference using the beamforming method''}
+\cventry{2010-2014}{Baccalaureate}{National College ``C. N. I.  Matei Basarab''}{Râmnicu Vâlcea}{\textit{}}{``Mathematics-Informatics''}
+
+\section{Experience}
+
+\subsection{Professional}
+
+\cventry{2022--present}{Software Engineer}{Luxoft}{București}{}{Maintained project building environment using CMake.\\Done socket programming using ZeroMQ library in C/C++.\\Automated environment configuration using Docker and Bash.\\Created integration tests using Golang and Clojure.\\Developed command line interface for sending/receiving messages.\\Developed certificate viewer in C++ using OpenSSL API.\\Refactored multiple repositories according to coding guidelines.}
+\cventry{2021--2022}{Software Engineer}{Continental}{Sibiu}{}{Worked on XML generator using Java and /AUTOSAR/ library.\\Converted JSON to XML data using Python.}
+\cventry{2019--2021}{System Engineer}{Ministry of Internal Affairs}{Râmnicu Vâlcea}{}{Developed scripts for task automation with PowerShell.\\Deployed and configured Radius server and Squid proxy.}
+\cventry{2018--2019}{Middleware Engineer}{Ministry of Internal Affairs}{Bucharest}{}{Provided layer 1 support.\\Managed users access in Oracle SQL database.}
+
+\subsection{Community Projects and Activities}
+
+\cventry{2024--present}{Contributor}{Curl}{}{}{Added code style checks (\url{https://github.com/curl/curl})}
+\cventry{2023--present}{Contributor}{Ttyper}{}{}{Added new functionalities (\url{https://github.com/max-niederman/ttyper})}
+
+\subsection{Topics of Interest}
+
+\cvline{Programming Languages}{\small Learn different paradigms.}
+\cvline{Open Source}{\small Contribute to software projects.}
+
+\renewcommand{\listitemsymbol}{-} % change the symbol for lists
+
+\section{Abilities}
+
+\subsection{Foreign Languages}
+
+\cvlanguage{English}{Excellent}{}
+\cvlanguage{Italian}{Moderate}{}
+
+\subsection{Technical Abilities}
+
+\cvcomputer{Programming Languages}{C/C++, Go, Lisp, Clojure, Bash, Python, Java}{Technical Skills}{cli tools development, low-level programming, debugging}
+\cvcomputer{Operating Systems}{Linux, macOS, Windows}{Tools and Applications}{maintenance, development, wikis, collaborative apps, version control systems}
+\cvcomputer{Documents}{\LaTeX, OpenOffice, Microsoft Office, Org-mode, Markdown}{Networking}{TCP/IP, DNS, SSH, FTP, DHCP}
+
+\end{document}
