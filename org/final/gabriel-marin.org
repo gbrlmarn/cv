@@ -1,0 +1,54 @@
+#+SETUPFILE: template.org
+
+* *Gabriel Marin*
+#+ATTR_LATEX: :environment tabular :align c|c|c
+| [[mailto:marin.gabriel@protonmail.com][marin.gabriel@protonmail.com]] | [[https://github.com/gbrlmarn][github.com/gbrlmarn]] | [[https://linkedin.com/in/maringabriel][linkedin.com/in/maringabriel]] |
+** *Work Experience*
+#+ATTR_LATEX: :environment tabular :center nil :align {L{14cm}R{3cm}}
+| *Luxoft*, Software Engineer                                        | 2022 -- Present |
+| • Maintained project building environment using CMake.             |                 |
+| • Done socket programming using ZeroMQ library in C/C++.           |                 |
+| • Automated environment configuration using Docker and Bash.       |                 |
+| • Created integration tests using Golang and Clojure.              |                 |
+| • Developed command line interface for sending/receiving messages. |                 |
+| • Developed certificate viewer in C++ using OpenSSL API.           |                 |
+| • Refactored multiple repositories according to coding guidelines. |                 |
+|                                                                    |                 |
+| *Continental*, Software Engineer                                   | 2021 -- 2022    |
+| • Worked on XML generator using Java and /AUTOSAR/ library.        |                 |
+| • Converted JSON to XML data using Python.                         |                 |
+|                                                                    |                 |
+| *Ministry of Internal Affairs*, System Engineer                    | 2019 -- 2021    |
+| • Developed scripts for task automation with PowerShell.           |                 |
+| • Deployed and configured Radius server and Squid proxy.           |                 |
+| *Ministry of Internal Affairs*, Middleware Engineer                | 2018 -- 2019    |
+| • Prepared draft for technical documentation.                      |                 |
+| • Managed users access in Oracle SQL database.                     |                 |
+
+** *Open Source Experience*
+#+ATTR_LATEX: :environment tabular :center nil :align p{14cm}
+| *Curl* (https://github.com/curl/curl)                                  |
+| • Enhanced Perl script to verify missing spaces in ternary operations. |
+| • Modified code in accordance to coding style rules.                     |
+|                                                                        |
+| *Ttyper* (https://github.com/max-niederman/ttyper)                     |
+| • Added option to disable backspace key.                               |
+| • Added configuration to chage corners shape.                            |
+
+
+
+** *Education*
+#+ATTR_LATEX: :environment tabular :center nil :align {L{14cm}R{3cm}}
+| *Military Technical Academy*                                       | Bucharest |
+| MA Telecommunications Engineering                                  |      2020 |
+| • Developed wireless sniffer using Python and Scapy library.       |           |
+| *Military Technical Academy*                                       | Bucharest |
+| BA Telecommunications Engineering                                  |      2018 |
+| • Developed Snake 3D game in Visual Studio using C++.              |           |
+| • Finished course about microcontrollers programming using mikroC. |           |
+| • Finished course about C programming basics.
+** *Technical Skills*
+#+ATTR_LATEX: :environment tabular :center nil
+| *Proficient Languages*: C/C++, Clojure, Go, LaTeX |
+| *Knowledgeable Languages*: Java, Lisp, Rust, Bash |
+| *Tools*: Git, Linux, Emacs, Docker, Boost         |
