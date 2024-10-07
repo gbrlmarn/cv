@@ -11,15 +11,15 @@ RabbitMQ, Django, Hugo, React
 - Provided better testing tooling to at least 2 other teams by developing command line
   application using C++ and ZeroMQ library for sending/receiving messages over TCP sockets.
 - Increase code coverage by minimum 75% by creating unit tests using Boost library.
-- Aligned codebase in 5 projects acording to coding guidelines
+- Aligned codebase in 5 projects according to coding guidelines
   by refactoring multiple repositories.
 *** *Continental*, Software Engineer \hfill 2021 -- 2022
 - Enhanced C code production by working on XML generator using Java and AUTOSAR library.
 *** *Ministry of Internal Affairs*, System Engineer \hfill 2019 -- 2021
 - Reduce software install time by 1-2 hours on a new PC by creating automation scripts.
 *** *Ministry of Internal Affairs*, Middleware Engineer \hfill 2018 -- 2019
-- Give access to 60 -- 80 users in Oracle SQL database by changing permisions acording
-  to requierements.
+- Give access to 60 -- 80 users in Oracle SQL database by changing permissions according
+  to requirements.
 ** *Open Source Experience*
 *** *Curl* \hfill [[https://github.com/curl/curl][curl]]
 - Improved code checking with new 17 findings by adding new functionality
