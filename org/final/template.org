@@ -24,9 +24,10 @@
 # Hyperlinks
 #+LATEX_HEADER:\definecolor{linkcolour}{rgb}{0,0.2,0.6}
 #+LATEX_HEADER:\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+# #+LATEX_HEADER:\hypersetup{urlbordercolor=black, pdfborderstyle={/S/U/W 1}}
 
 # Headings
-#+LATEX_HEADER:\titleformat{\section}{\LARGE\center}{\thesection}{}{}
+#+LATEX_HEADER:\titleformat{\section}{\huge\center}{\thesection}{}{}
 #+LATEX_HEADER:\titlespacing{\section}{0pt}{4pt}{0pt}
 #+LATEX_HEADER:\setlength{\columnsep}{0cm} % space between columns
 

@@ -1,6 +1,10 @@
 #+SETUPFILE: template.org
 * *Gabriel Marin*
-|[[mailto:marin.gabriel@protonmail.com][marin.gabriel@protonmail.com]] | [[https://github.com/gbrlmarn][github.com/gbrlmarn]] | [[https://linkedin.com/in/maringabriel][linkedin.com/in/maringabriel]] 
+#+BEGIN_CENTER
+[[mailto:marin.gabriel@protonmail.com][marin.gabriel@protonmail.com]] |
+[[https://github.com/gbrlmarn][github.com/gbrlmarn]] |
+[[https://linkedin.com/in/maringabriel][linkedin.com/in/maringabriel]]
+#+END_CENTER
 ** *Skills*
 Programming Languages: C, C++, Clojure, Go, Java, Lisp, Rust,
 Bash, HTML, CSS, LaTeX, Erlang, Elixir, C#, SQL, NoSQL, Datomic\\
