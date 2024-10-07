@@ -1,4 +1,4 @@
-% Created 2024-10-06 Sun 12:55
+% Created 2024-10-08 Tue 00:59
 % Intended LaTeX compiler: xelatex
 \documentclass[a4paper,12pt]{article}
 \usepackage{graphicx}
@@ -10,31 +10,25 @@
 \usepackage{amssymb}
 \usepackage{capt-of}
 \usepackage{hyperref}
+\usepackage[margin=2cm]{geometry}
 \usepackage{fontspec}
-\setmainfont{Open Sans}
+\setmainfont{Inter}
 \pagenumbering{gobble}
-\usepackage[big]{layaureo} % better A4 formating
 \usepackage{titlesec} % custom \section
 \usepackage{url,parskip} % packages for formating
-\usepackage{multicol} % multiples columns
-\usepackage{ragged2e} % for alignment
 \usepackage{color}
-\usepackage{graphicx}
-\usepackage{svg}
 \usepackage{hyperref}
-\usepackage{array} % for table alignment
-\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
-\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
-\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 \definecolor{linkcolour}{rgb}{0,0.2,0.6}
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
 \titleformat{\section}{\LARGE\center}{\thesection}{}{}
 \titlespacing{\section}{0pt}{4pt}{0pt}
-\setlength{\columnsep}{1cm} % space between columns
-\titleformat{\subsection}{\large\center}{\thesubsection}{}{}
+\setlength{\columnsep}{0cm} % space between columns
+\titleformat{\subsection}{\normalsize\center}{\thesubsection}{}{}[\hrule]
 \titlespacing{\subsection}{0pt}{1pt}{1pt}
-\titleformat{\subsubsection}{\normalsize\scshape\raggedright}{\thesubsubsection}{1em}{}
-\titlespacing{\subsubsection}{0pt}{1pt}{1pt}
+\titleformat{\subsubsection}{\normalsize\raggedright}{\thesubsubsection}{}{}
+\titlespacing{\subsubsection}{0pt}{1pt}{0pt}
+\usepackage{enumitem}
+\setlist{noitemsep, leftmargin=0.5cm}
 \date{}
 \title{}
 \hypersetup{
@@ -46,69 +40,68 @@
  pdflang={English}}
 \begin{document}
 
-
 \section*{\textbf{Gabriel Marin}}
-\label{sec:org0b2e11d}
+\label{sec:org2a9ab6f}
 \begin{center}
-\begin{tabular}{c|c|c}
+\begin{tabular}{lll}
 \href{mailto:marin.gabriel@protonmail.com}{marin.gabriel@protonmail.com} & \href{https://github.com/gbrlmarn}{github.com/gbrlmarn} & \href{https://linkedin.com/in/maringabriel}{linkedin.com/in/maringabriel}\\
 \end{tabular}
 \end{center}
+\subsection*{\textbf{Skills}}
+\label{sec:org6b0e19f}
+Programming Languages: C, C++, Clojure, Go, Java, Lisp, Rust,
+Bash, HTML, CSS, \LaTeX{}, Erlang, Elixir, C\#, SQL, NoSQL, Datomic\\
+Tools: Linux, Git, Emacs, Coreutils, Docker, Boost, Vim, ZeroMQ,
+RabbitMQ, Django, Hugo, React
 \subsection*{\textbf{Work Experience}}
-\label{sec:orgab1303b}
-\begin{tabular}{{L{14cm}R{3cm}}}
-\textbf{Luxoft}, Software Engineer & 2022 -- Present\\
-• Maintained project building environment using CMake. & \\
-• Done socket programming using ZeroMQ library in C/C++. & \\
-• Automated environment configuration using Docker and Bash. & \\
-• Created integration tests using Golang and Clojure. & \\
-• Developed command line interface for sending/receiving messages. & \\
-• Developed certificate viewer in C++ using OpenSSL API. & \\
-• Refactored multiple repositories according to coding guidelines. & \\
- & \\
-\textbf{Continental}, Software Engineer & 2021 -- 2022\\
-• Worked on XML generator using Java and \emph{AUTOSAR} library. & \\
-• Converted JSON to XML data using Python. & \\
- & \\
-\textbf{Ministry of Internal Affairs}, System Engineer & 2019 -- 2021\\
-• Developed scripts for task automation with PowerShell. & \\
-• Deployed and configured Radius server and Squid proxy. & \\
-\textbf{Ministry of Internal Affairs}, Middleware Engineer & 2018 -- 2019\\
-• Prepared draft for technical documentation. & \\
-• Managed users access in Oracle SQL database. & \\
-\end{tabular}
-
+\label{sec:org814bfb4}
+\subsubsection*{\textbf{Luxoft}, Software Engineer \hfill 2022 -- Present}
+\label{sec:org5fa85ea}
+\begin{itemize}
+\item Provided better testing tooling to at least 2 other teams by developing command line
+application using C++ and ZeroMQ library for sending/receiving messages over TCP sockets.
+\item Increase code coverage by minimum 75\% by creating unit tests using Boost library.
+\item Aligned codebase in 5 projects according to coding guidelines
+by refactoring multiple repositories.
+\end{itemize}
+\subsubsection*{\textbf{Continental}, Software Engineer \hfill 2021 -- 2022}
+\label{sec:org0e0663b}
+\begin{itemize}
+\item Enhanced C code production by working on XML generator using Java and AUTOSAR library.
+\end{itemize}
+\subsubsection*{\textbf{Ministry of Internal Affairs}, System Engineer \hfill 2019 -- 2021}
+\label{sec:orgb36cc9f}
+\begin{itemize}
+\item Reduce software install time by more than 1 hour on a new PC by creating automation scripts.
+\end{itemize}
+\subsubsection*{\textbf{Ministry of Internal Affairs}, Middleware Engineer \hfill 2018 -- 2019}
+\label{sec:orgcdf6816}
+\begin{itemize}
+\item Give access to at least 80 users in Oracle SQL database by changing permissions according
+to requirements.
+\end{itemize}
 \subsection*{\textbf{Open Source Experience}}
-\label{sec:org57cfaee}
-\begin{tabular}{p{14cm}}
-\textbf{Curl} (\url{https://github.com/curl/curl})\\
-• Enhanced Perl script to verify missing spaces in ternary operations.\\
-• Modified code in accordance to coding style rules.\\
-\\
-\textbf{Ttyper} (\url{https://github.com/max-niederman/ttyper})\\
-• Added option to disable backspace key.\\
-• Added configuration to chage corners shape.\\
-\end{tabular}
-
-
-
+\label{sec:org789a2d7}
+\subsubsection*{\textbf{Curl} \hfill \href{https://github.com/curl/curl}{curl}}
+\label{sec:org469098c}
+\begin{itemize}
+\item Improved code checking with 17 new findings by adding functionality
+that checks for spaces around ternary operators using Perl.
+\end{itemize}
+\subsubsection*{\textbf{Ttyper} \hfill \href{https://github.com/maxniederman/ttyper}{ttyper}}
+\label{sec:org17f682a}
+\begin{itemize}
+\item Resolved one issue by implementing a functionality that permits to change the shape of the corners using Rust.
+\end{itemize}
 \subsection*{\textbf{Education}}
-\label{sec:org57d3a42}
-\begin{tabular}{{L{14cm}R{3cm}}}
-\textbf{Military Technical Academy} & Bucharest\\
-MA Telecommunications Engineering & 2020\\
-• Developed wireless sniffer using Python and Scapy library. & \\
-\textbf{Military Technical Academy} & Bucharest\\
-BA Telecommunications Engineering & 2018\\
-• Developed Snake 3D game in Visual Studio using C++. & \\
-• Finished course about microcontrollers programming using mikroC. & \\
-• Finished course about C programming basics.\\
-\end{tabular}
-\subsection*{\textbf{Technical Skills}}
-\label{sec:orgc81d92f}
-\begin{tabular}{l}
-\textbf{Proficient Languages}: C/C++, Clojure, Go, \LaTeX{}\\
-\textbf{Knowledgeable Languages}: Java, Lisp, Rust, Bash\\
-\textbf{Tools}: Git, Linux, Emacs, Docker, Boost\\
-\end{tabular}
+\label{sec:org59497bd}
+\subsubsection*{\textbf{Military Technical Academy}, Bucharest \hfill 2018 -- 2020}
+\label{sec:org405366f}
+MA Telecommunications Engineering
+\subsubsection*{\textbf{Military Technical Academy}, Bucharest \hfill 2014 -- 2018}
+\label{sec:org93c5c51}
+BA Telecommunications Engineering
+\subsection*{\textbf{Other Skills}}
+\label{sec:orgc71638d}
+Languages: Romanian, English, Italian, French
 \end{document}

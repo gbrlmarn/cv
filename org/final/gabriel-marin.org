@@ -16,14 +16,14 @@ RabbitMQ, Django, Hugo, React
 *** *Continental*, Software Engineer \hfill 2021 -- 2022
 - Enhanced C code production by working on XML generator using Java and AUTOSAR library.
 *** *Ministry of Internal Affairs*, System Engineer \hfill 2019 -- 2021
-- Reduce software install time by 1-2 hours on a new PC by creating automation scripts.
+- Reduce software install time by more than 1 hour on a new PC by creating automation scripts.
 *** *Ministry of Internal Affairs*, Middleware Engineer \hfill 2018 -- 2019
-- Give access to 60 -- 80 users in Oracle SQL database by changing permissions according
+- Give access to at least 80 users in Oracle SQL database by changing permissions according
   to requirements.
 ** *Open Source Experience*
 *** *Curl* \hfill [[https://github.com/curl/curl][curl]]
-- Improved code checking with new 17 findings by adding new functionality
-  that checks ternary operators using Perl.
+- Improved code checking with 17 new findings by adding functionality
+  that checks for spaces around ternary operators using Perl.
 *** *Ttyper* \hfill [[https://github.com/maxniederman/ttyper][ttyper]]
 - Resolved one issue by implementing a functionality that permits to change the shape of the corners using Rust.
 ** *Education*

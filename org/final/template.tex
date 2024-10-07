@@ -1,4 +1,4 @@
-% Created 2024-10-06 Sun 01:42
+% Created 2024-10-07 Mon 23:50
 % Intended LaTeX compiler: xelatex
 \documentclass[a4paper,12pt]{article}
 \usepackage{graphicx}
@@ -10,29 +10,25 @@
 \usepackage{amssymb}
 \usepackage{capt-of}
 \usepackage{hyperref}
+\usepackage[margin=2 cm]{geometry}
 \usepackage{fontspec}
-\setmainfont{Open Sans}
+\setmainfont{Inter}
 \pagenumbering{gobble}
-\usepackage[big]{layaureo} % better A4 formating
 \usepackage{titlesec} % custom \section
 \usepackage{url,parskip} % packages for formating
-\usepackage{multicol} % multiples columns
-\usepackage{ragged2e} % for alignment
 \usepackage{color}
-\usepackage{graphicx}
-\usepackage{svg}
 \usepackage{hyperref}
-\usepackage{array} % for table alignment
-\newcolumntype{R}{>{\raggedright}p{0.02\textwidth}}
 \definecolor{linkcolour}{rgb}{0,0.2,0.6}
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
 \titleformat{\section}{\LARGE\center}{\thesection}{}{}
 \titlespacing{\section}{0pt}{4pt}{0pt}
-\setlength{\columnsep}{1cm} % space between columns
-\titleformat{\subsection}{\large\center}{\thesubsection}{}{}
+\setlength{\columnsep}{0cm} % space between columns
+\titleformat{\subsection}{\normalsize\center}{\thesubsection}{}{}[\hrule]
 \titlespacing{\subsection}{0pt}{1pt}{1pt}
-\titleformat{\subsubsection}{\normalsize\scshape\raggedright}{\thesubsubsection}{1em}{}
-\titlespacing{\subsubsection}{0pt}{1pt}{1pt}
+\titleformat{\subsubsection}{\normalsize\raggedright}{\thesubsubsection}{}{}
+\titlespacing{\subsubsection}{0pt}{1pt}{0pt}
+\usepackage{enumitem}
+\setlist{noitemsep, leftmargin=0.5cm}
 \date{}
 \title{}
 \hypersetup{
@@ -43,5 +39,6 @@
  pdfcreator={Emacs 28.2 (Org mode 9.5.5)}, 
  pdflang={English}}
 \begin{document}
+
 
 \end{document}

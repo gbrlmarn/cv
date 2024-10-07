@@ -6,7 +6,7 @@
 #+LATEX_COMPILER: xelatex
 
 # Page geometry
-#+LATEX_HEADER:\usepackage[margin=2 cm]{geometry}
+#+LATEX_HEADER:\usepackage[margin=2cm]{geometry}
 
 # Font selection
 #+LATEX_HEADER:\usepackage{fontspec}
