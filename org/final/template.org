@@ -23,8 +23,8 @@
 
 # Hyperlinks
 #+LATEX_HEADER:\definecolor{linkcolour}{rgb}{0,0.2,0.6}
-#+LATEX_HEADER:\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
-# #+LATEX_HEADER:\hypersetup{urlbordercolor=black, pdfborderstyle={/S/U/W 1}}
+# #+LATEX_HEADER:\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+#+LATEX_HEADER:\hypersetup{urlbordercolor=black, pdfborderstyle={/S/U/W 1}}
 
 # Headings
 #+LATEX_HEADER:\titleformat{\section}{\huge\center}{\thesection}{}{}
