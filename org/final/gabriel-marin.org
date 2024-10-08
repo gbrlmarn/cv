@@ -6,10 +6,10 @@
 [[https://linkedin.com/in/maringabriel][linkedin.com/in/maringabriel]]
 #+END_CENTER
 ** *Skills*
-Programming Languages: C, C++, Clojure, Go, Java, Lisp, Rust,
-Bash, HTML, CSS, LaTeX, Erlang, Elixir, C#, SQL, NoSQL, Datomic\\
-Tools: Linux, Git, Emacs, Coreutils, Docker, Boost, Vim, ZeroMQ,
-RabbitMQ, Django, Hugo, React
+- *Programming Languages*: C, C++, Clojure, Go, Java, Rust, Bash,
+  Scheme, Common Lisp, HTML, CSS, LaTeX, Erlang, Elixir, C#, SQL, NoSQL, Datomic
+- *Tools*: Linux, Git, Emacs, Coreutils, Docker, ZeroMQ, Boost,
+  Make, CMake, Vim, Jenkins, Yocto, BitBake, RabbitMQ, Django, Hugo, React
 ** *Work Experience*
 *** *Luxoft*, Software Engineer \hfill 2022 -- Present
 - Provided better testing tooling to at least 2 teams by developing command line
@@ -37,4 +37,4 @@ MA Telecommunications Engineering
 *** *Military Technical Academy*, Bucharest \hfill 2014 -- 2018
 BA Telecommunications Engineering
 ** *Other Skills*
-Languages: Romanian, English, Italian, French
+- *Languages*: Romanian, English, Italian, French
