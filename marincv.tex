@@ -1,18 +1,14 @@
 \documentclass[a4paper,12pt]{article}
 
 % Packages
-\usepackage[defaultsans]{opensans}
-\usepackage[T1]{fontenc}
-\usepackage[big]{layaureo} % better A4 formating
+\usepackage{times} % Times New Roman font
 \usepackage{titlesec} % custom \section
 \usepackage{url,parskip} % packages for formating
 \usepackage{multicol} % multiples columns
 \usepackage{ragged2e} % for alignment
 \usepackage{color}
-\usepackage{graphicx}
-\usepackage{svg}
-\usepackage{emoji}
-\setemojifont{Noto Color Emoji}
+\usepackage{geometry} % for page alignment
+\usepackage{enumitem} % for items spacing
 
 \usepackage{hyperref}
 \definecolor{linkcolour}{rgb}{0,0.2,0.6}
@@ -23,137 +19,82 @@
 \titlespacing{\section}{0pt}{4pt}{4pt}
 \setlength{\columnsep}{1cm} % space between columns
 
-% Aliases
-\usepackage{tikz} % Skill scale
-\newcommand\skill[2] {
-  \ifnum#1>#2
-  $#1 > #2$
-  \else \ifnum#1<0
-  $#1 < 0$
-  \else \ifnum#2<0
-  $#2 < 0$
-  \else
-  \tikz{
-    \ifx#20
-    \else
-    \foreach \i in {1,...,#2} {
-      \filldraw[black!20] (\i ex,0) circle (0.4ex);
-    };
-    \fi
-    \ifx#10
-    \else
-    \foreach \i in {1,...,#1} {
-      \filldraw[black] (\i ex,0) circle (0.4ex);
-    };
-    \fi
-  }
-  \fi
-  \fi
-  \fi
-}
+\geometry{left=1.4cm, top=0.8cm, right=1.2cm, bottom=1cm}
 
 % Main
 \begin{document}
 \pagestyle{empty}
 
 % Title
+\begin{center}
 \par {
-  {\Huge Gabriel Marin}
-  \bigskip
+  {\Huge Gabriel Marin}\\
 }
-
-% Sections
-% Personal Data
-\section{Personal Data}
-\begin{tabular}{ll}
-  \emoji{email}
-  \href{mailto:marin.gabriel@protonmail.com}{marin.gabriel@protonmail.com}\\
-  \emoji{telephone-receiver}
-  \href{tel:+40742038849}{+40 7420 38849}\\
-  \\ % Empty line for good align
-\end{tabular}
-\begin{tabular}{ll}
-  \includesvg[width=13pt]{./svg/linkedin.svg}
-  \href{https://linkedin.com/in/gbrlmarn}{linkedin.com/in/gbrlmarn}\\
-  \includesvg[width=13pt]{./svg/github.svg}
-  \href{https://github.com/gbrlmarn}{github.com/gbrlmarn}\\
-  \includesvg[width=13pt]{./svg/gbrlmarn.svg}
-  \href{https://gbrlmarn.github.io}{gbrlmarn.github.io}
-\end{tabular}
-
-% About
-\section{About}
-\RaggedRight {
-  Hello, I'm a \textbf{software engineer} with a background in networking and programming,
-  passionate about open-source software, programming languages and \href{https://www.youtube.com/watch?v=ka2cg6SVmrI}{cardistry}.
-}
+\href{mailto:marin.gabriel@protonmail.com}{marin.gabriel@protonmail.com} \vrule\vspace{3mm}
+\href{https://linkedin.com/in/maringabriel}{linkedin.com/in/maringabriel} \vrule\vspace{3mm}
+\href{https://github.com/gblmrn}{github.com/gblmrn}
+\end{center}
 
 % Work Experience
 \section{Work Experience}
-\begin{tabular}{p{3.5cm}|l}
-  \raggedleft2022-\emph{Present}
-  &Software Engineer at \textbf{Luxoft}, Bucharest\\
-  &\footnotesize{Done socket programming using ZeroMQ library in C/C++.}\\
-  &\footnotesize{Automated environment configuration using Docker and Bash.}\\
-  &\footnotesize{Wrote integration tests using Golang and Clojure.}\\
-  &\footnotesize{Developed command line interface for sending/receiving serialized messages.}\\
-  &\footnotesize{Developed certificate viewer in C++ using OpenSSL API.}\\
-  \multicolumn{2}{c}{}\\
-  \raggedleft2021-2022
-  &Software Engineer at \textbf{Continental}, Sibiu\\
-  &\footnotesize{Worked on code generator, parsing XML and JSON with Java and Python.}\\
-  \multicolumn{2}{c}{}\\
-  \raggedleft2019-2021 
-  &Sys Engineer at \textbf{Ministry of Internal Affairs}, Rm.Valcea\\
-  &\footnotesize{Developed scripts for task automation with PowerShell.}\\
-  &\footnotesize{Deployed and configured Radius server and Squid proxy.}\\
-  \raggedleft2018-2019 
-  &IT Engineer at \textbf{Ministry of Internal Affairs}, Bucharest\\
-  &\footnotesize{Provided layer I support.}\\
-  &\footnotesize{Managed users access in Oracle SQL database.}\\
-\end{tabular}
+Software Engineer at \textbf{Luxoft}, Bucharest \hfill 2022-\emph{Present}
+\vspace{-3mm}
+\begin{itemize}[noitemsep, leftmargin=4mm]
+\item Provided better testing tooling to at least 2 teams by developing command line application using C++ and ZeroMQ library for sending/receiving messages over TCP sockets.
+\item Increase code coverage by minimum 75\% by creating unit tests using Boost library.
+\item Aligned codebase in 5 projects according to coding guidelines by refactoring multiple repositories.
+\end{itemize}
+  
+Software Engineer at \textbf{Continental}, Sibiu \hfill 2021-2022
+\vspace{-3mm}
+\begin{itemize}[noitemsep, leftmargin=4mm]
+\item Enhanced C code production by working on XML generator using Java and AUTOSAR library.
+\end{itemize}
+  
+System Engineer at \textbf{Ministry of Internal Affairs}, Rm.Valcea \hfill 2019-2021
+\vspace{-3mm}
+\begin{itemize}[noitemsep, leftmargin=4mm]
+\item Reduce computer setup by 1+ hour by creating automation scripts.
+\end{itemize}
+  
+Middleware Engineer at \textbf{Ministry of Internal Affairs}, Bucharest \hfill 2018-2019
+\vspace{-3mm}
+\begin{itemize}[noitemsep, leftmargin=4mm]
+\item Give access to at least 80 users in Oracle SQL database by changing permissions according to requirements.
+\end{itemize}
 
-% Education
-\section{Education}
-\begin{tabular}{p{3.5cm}|l}
-  \raggedleft2018-2020&
-  Master's Degree in Telecommunications Engineering\\
-  &\textbf{Military Technical Academy}, Bucharest\\
-  \raggedleft2014-2018&
-  Bachelor's Degree in Telecommunications Engineering\\
-  &\textbf{Military Technical Academy}, Bucharest\\
-\end{tabular}
+\section{Open Source}
+Curl \hfill \href{https://github.com/curl/curl}{github.com/curl/curl}
+\vspace{-3mm}
+\begin{itemize}[noitemsep, leftmargin=4mm]
+\item Improved code formatting with 17 new findings by adding check for spaces around ternary operators using Perl.
+\end{itemize}
 
+Ttyper \hfill \href{https://github.com/maxniederman/ttype}{github.com/maxniederman/ttyper}
+\vspace{-3mm}
+\begin{itemize}[noitemsep, leftmargin=4mm]
+\item Supplied application customization by solving 1 issue and implementing a functionality that permits to change the shape of the corners using Rust.
+\end{itemize}
+
+  
 %Section: Computer skills
 \section{Programming Languages}
-\begin{tabular}{p{3.5cm}|l}
-  \skill{4}{5}Proficient 
-  &C/C++, Go\\
-  \skill{3}{5}Competent&
-  Rust, Python, Java, Bash, Clojure, Lisp\\
-  \skill{2}{5}Beginner&
-  Erlang, Elixir, Lua, Perl, JavaScript, Assembly, SQL\\
-\end{tabular}
+C, C++, Go, Rust, Python, Java, Bash, Clojure, Lisp,
+Erlang, Elixir, Lua, Perl, JavaScript, Assembly, SQL
 
 \section{Tools \& Libraries}
-\begin{tabular}{p{3.5cm}|l}
-  \skill{4}{5}Proficient&
-  GNU/Linux, Git, Coreutils, Vim, ZeroMQ, Regexp, \LaTeX, Emacs\\
-  \skill{3}{5}Competent&
-  Docker, GDB, Boost, Make, CMake, OpenSSL, OpenWrt, HTML/CSS\\ 
-  \skill{2}{5}Beginner&
-  RabbitMQ, Valgrind, FlatBuffers, Hugo, Terraform, Django\\ 
-\end{tabular}
+GNU/Linux, Git, Coreutils, Vim, ZeroMQ, Regexp, \LaTeX, 
+Emacs, Docker, GDB, Boost, Make, CMake, OpenSSL, OpenWrt, HTML/CSS, 
+RabbitMQ, Valgrind, FlatBuffers, Hugo, Terraform, Django 
+
+\section{Education}
+Master's Degree in Telecommunications Engineering \hfill 2018-2020\\
+Military Technical Academy, Bucharest
+
+Bachelor's Degree in Telecommunications Engineering \hfill 2014-2018\\
+Military Technical Academy, Bucharest
 
 \section{Languages}
-\begin{tabular}{p{3.5cm}|l}
-  \skill{5}{5}Expert&
-  Romanian\\
-  \skill{4}{5}Proficient&
-  English\\
-  \skill{3}{5}Intermediate&
-  Italian\\
-  \skill{2}{5}Beginner&
-  French
-\end{tabular}
+Romanian, English, Italian, French
+
 \end{document}

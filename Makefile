@@ -6,7 +6,7 @@ OBJS = marincv
 all: $(OBJS)
 
 marincv.pdf: marincv.tex 
-	lualatex --shell-escape $^
+	$(CC) $^
 
 clean:
 	rm -rf *.out *.aux *.log *~
