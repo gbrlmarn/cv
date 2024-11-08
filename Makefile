@@ -1,5 +1,5 @@
 CC = pdflatex
-OBJS = marincv
+OBJS = marincv.pdf
 
 .PHONY: all clean
 
