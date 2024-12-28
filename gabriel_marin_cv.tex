@@ -8,13 +8,9 @@
 \usepackage{multicol} % multiples columns
 \usepackage{ragged2e} % for alignment
 \usepackage{array} % for tabular alignment
-\usepackage{color}
-\usepackage{graphicx}
+\usepackage[hidelinks]{hyperref} % for links
 \usepackage[margin=1cm]{geometry} % page margins
-
-\usepackage{hyperref}
-\definecolor{linkcolour}{rgb}{0,0.2,0.6}
-\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+%\geometry{showframe} % this can be use for alignment
 
 % CV sections
 \titleformat{\section}{\large\scshape\raggedright}{}{0em}{}[\titlerule]
@@ -30,7 +26,8 @@
   \bigskip
 }
 
-\begin{tabular}{>{\raggedleft\bfseries\arraybackslash}p{3cm}|>{\raggedright\arraybackslash}p{16cm}}
+% Body
+\begin{tabular}{>{\raggedleft\bfseries\arraybackslash}p{3cm}|>{\raggedright\arraybackslash}p{15cm}}
 % Contact
     Contact
     &\href{mailto:gbrlmarn@gmail.com}{gbrlmarn@gmail.com}\\
@@ -42,7 +39,7 @@
 Programming Languages & C, C++, Go, Rust, Python, Java, Bash, Clojure, Lisp, Erlang, Elixir, Lua, Perl, JavaScript, Assembly, SQL. \\
 \\
 % Tools
-Tools & GNU/Linux, Git, Coreutils, Vim, ZeroMQ, Regexp, \LaTeX, Emacs Docker, GDB, Boost, Make, CMake, OpenSSL, OpenWrt, HTML/CSS RabbitMQ, Valgrind, FlatBuffers, Hugo, Terraform, Django. \\
+Tools & Linux, Git, Coreutils, Vim, ZeroMQ, Regexp, \LaTeX, Emacs, Docker, Podman, GDB, Boost, Make, CMake, BitBake, OpenSSL, OpenWrt, HTML, CSS, RabbitMQ, Valgrind, FlatBuffers, Hugo, Terraform, Django. \\
 \\
 % Work 
   & Working Experience \\
@@ -54,19 +51,17 @@ Tools & GNU/Linux, Git, Coreutils, Vim, ZeroMQ, Regexp, \LaTeX, Emacs Docker, GD
   2021-2022 &Software Engineer at \textbf{Continental}, Sibiu\\
   &\footnotesize{Enhanced C code production by working on XML generator using Java and AUTOSAR library.}\\
   \\
-  2019-2021 & Sys Engineer at \textbf{Ministry of Internal Affairs}, Rm.Valcea\\
+  2019-2021 & System Engineer at \textbf{Ministry of Internal Affairs}, Rm.Valcea\\
   &\footnotesize{Reduce computer setup by 1+ hour by creating automation scripts.}\\
   \\
-  2018-2019 & IT Engineer at \textbf{Ministry of Internal Affairs}, Bucharest\\
+  2018-2019 & Middleware Engineer at \textbf{Ministry of Internal Affairs}, Bucharest\\
   &\footnotesize{Give access to at least 80 users in Oracle SQL database by changing permissions according to requirements.}\\
   \\
   % Open Source
   & Open source \\
-    Curl & \href{https://github.com/curl/curl}{github.com/curl/curl}\\
-    &\footnotesize{Improved code formatting with 17 new findings by adding check for spaces around ternary operators using Perl.}\\
+    \href{https://github.com/curl/curl}{Curl} & \footnotesize{Improved code formatting with 17 new findings by adding check for spaces around ternary operators using Perl.}\\
     \\
-    Ttyper &  \href{https://github.com/max-niederman/ttyper}{github.com/max-niederman/ttyper}\\
-    &\footnotesize{Supplied application customization by solving 1 issue and implementing a functionality that permits to change the corners shape using Rust.}\\
+    \href{https://github.com/max-niederman/ttyper}{Ttyper} & \footnotesize{Supplied application customization by solving 1 issue and implementing a functionality that permits to change the corners shape using Rust.}\\
     \\
 % Education
     & Education\\
