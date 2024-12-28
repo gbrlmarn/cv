@@ -1,0 +1,82 @@
+\documentclass[a4paper,12pt]{article}
+
+% Packages
+\usepackage[default,oldstyle,scale=0.95]{opensans}
+\usepackage[T1]{fontenc}
+\usepackage{titlesec} % custom \section
+\usepackage{url,parskip} % packages for formating
+\usepackage{multicol} % multiples columns
+\usepackage{ragged2e} % for alignment
+\usepackage{array} % for tabular alignment
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage[margin=1cm]{geometry} % page margins
+
+\usepackage{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+% CV sections
+\titleformat{\section}{\large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{4pt}{4pt}
+\setlength{\columnsep}{1cm} % space between columns
+
+% Main
+\begin{document}
+
+% Title
+\par {
+  {\Huge Gabriel Marin}
+  \bigskip
+}
+
+\begin{tabular}{>{\raggedleft\bfseries\arraybackslash}p{3cm}|>{\raggedright\arraybackslash}p{16cm}}
+% Contact
+    Contact
+    &\href{mailto:gbrlmarn@gmail.com}{gbrlmarn@gmail.com}\\
+    &\href{https://github.com/gbrlmarn}{github.com/gbrlmarn}\\
+    &\href{https://gbrlmarn.github.io}{gbrlmarn.github.io}\\
+    &\href{https://linkedin.com/in/gbrlmarn}{linkedin.com/in/gbrlmarn}\\
+    \\
+% Programming Languages 
+Programming Languages & C, C++, Go, Rust, Python, Java, Bash, Clojure, Lisp, Erlang, Elixir, Lua, Perl, JavaScript, Assembly, SQL. \\
+\\
+% Tools
+Tools & GNU/Linux, Git, Coreutils, Vim, ZeroMQ, Regexp, \LaTeX, Emacs Docker, GDB, Boost, Make, CMake, OpenSSL, OpenWrt, HTML/CSS RabbitMQ, Valgrind, FlatBuffers, Hugo, Terraform, Django. \\
+\\
+% Work 
+  & Working Experience \\
+  2022-Present & Software Engineer at \textbf{Luxoft}, Bucharest\\
+  &\footnotesize{Provided better testing tooling to at least 2 teams by developing command line application using C++ and ZeroMQ library for sending and receiving messages over TCP sockets.}\\
+  &\footnotesize{Increase code coverage by minimum 75\% by creating unit tests using Boost library.}\\
+  &\footnotesize{Aligned codebase in 5 projects according to coding guidelines by refactoring multiple repositories.}\\
+  \\
+  2021-2022 &Software Engineer at \textbf{Continental}, Sibiu\\
+  &\footnotesize{Enhanced C code production by working on XML generator using Java and AUTOSAR library.}\\
+  \\
+  2019-2021 & Sys Engineer at \textbf{Ministry of Internal Affairs}, Rm.Valcea\\
+  &\footnotesize{Reduce computer setup by 1+ hour by creating automation scripts.}\\
+  \\
+  2018-2019 & IT Engineer at \textbf{Ministry of Internal Affairs}, Bucharest\\
+  &\footnotesize{Give access to at least 80 users in Oracle SQL database by changing permissions according to requirements.}\\
+  \\
+  % Open Source
+  & Open source \\
+    Curl & \href{https://github.com/curl/curl}{github.com/curl/curl}\\
+    &\footnotesize{Improved code formatting with 17 new findings by adding check for spaces around ternary operators using Perl.}\\
+    \\
+    Ttyper &  \href{https://github.com/max-niederman/ttyper}{github.com/max-niederman/ttyper}\\
+    &\footnotesize{Supplied application customization by solving 1 issue and implementing a functionality that permits to change the corners shape using Rust.}\\
+    \\
+% Education
+    & Education\\
+  2018-2020 & Master's Degree in Telecommunications Engineering \\
+  & \textbf{Military Technical Academy}, Bucharest \\
+  \\
+  2014-2018 & Bachelor's Degree in Telecommunications Engineering \\
+  & \textbf{Military Technical Academy}, Bucharest\\
+  \\
+    % Languages
+    Languages & Romanian, English, Italian, French
+\end{tabular}
+\end{document}
