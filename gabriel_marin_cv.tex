@@ -18,6 +18,13 @@
 \titlespacing{\section}{0pt}{4pt}{4pt}
 \setlength{\columnsep}{1cm} % space between columns
 
+% Commands
+\newcommand{\body}[1]{
+    \begin{tabular}{>{\raggedleft\bfseries\arraybackslash}p{3cm}|>{\raggedright\arraybackslash}p{15cm}}
+        #1
+    \end{tabular}
+}
+
 % Main
 \begin{document}
 
@@ -28,7 +35,7 @@
 }
 
 % Body
-\begin{tabular}{>{\raggedleft\bfseries\arraybackslash}p{3cm}|>{\raggedright\arraybackslash}p{15cm}}
+\body{
 % Contact
     Contact
     &\href{mailto:gbrlmarn@gmail.com}{\faicon{envelope} gbrlmarn@gmail.com}\\
@@ -43,33 +50,35 @@ Programming Languages & C, C++, Go, Rust, Python, Java, Bash, Clojure, Lisp, Erl
 Tools & Linux, Git, Coreutils, Vim, ZeroMQ, Regexp, \LaTeX, Emacs, Docker, Podman, GDB, Boost, Make, CMake, BitBake, OpenSSL, OpenWrt, HTML, CSS, RabbitMQ, Valgrind, FlatBuffers, Hugo, Terraform, Django. \\
 \\
 % Work 
-  2022-Present & Software Engineer at Luxoft, Bucharest\\
+  Work & Software Engineer at Luxoft, Bucharest 2022-Present \\
   &\footnotesize{Provided better testing tooling to at least 2 teams by developing command line application using C++ and ZeroMQ library for sending and receiving messages over TCP sockets.}\\
   &\footnotesize{Increase code coverage by minimum 75\% by creating unit tests using Boost library.}\\
   &\footnotesize{Aligned codebase in 5 projects according to coding guidelines by refactoring multiple repositories.}\\
   \\
-  2021-2022 &Software Engineer at Continental, Sibiu\\
+  &Software Engineer at Continental, Sibiu 2021-2022 \\
   &\footnotesize{Enhanced C code production by working on XML generator using Java and AUTOSAR library.}\\
   \\
-  2019-2021 & System Engineer at Ministry of Internal Affairs, Rm.Valcea\\
+  & System Engineer at Ministry of Internal Affairs, Rm.Valcea 2019-2021 \\
   &\footnotesize{Reduce computer setup by 1+ hour by creating automation scripts.}\\
   \\
-  2018-2019 & Middleware Engineer at Ministry of Internal Affairs, Bucharest\\
+  & Middleware Engineer at Ministry of Internal Affairs, Bucharest 2018-2019 \\
   &\footnotesize{Give access to at least 80 users in Oracle SQL database by changing permissions according to requirements.}\\
   \\
   % Open Source
-    \href{https://github.com/curl/curl}{Curl} & \footnotesize{Improved code formatting with 17 new findings by adding check for spaces around ternary operators using Perl.}\\
+  Open Source & \href{https://github.com/curl/curl}{Curl} \\
+  & \footnotesize{Improved code formatting with 17 new findings by adding check for spaces around ternary operators using Perl.}\\
     \\
-    \href{https://github.com/max-niederman/ttyper}{Ttyper} & \footnotesize{Supplied application customization by solving 1 issue and implementing a functionality that permits to change the corners shape using Rust.}\\
+    & \href{https://github.com/max-niederman/ttyper}{Ttyper} \\
+    & \footnotesize{Supplied application customization by solving 1 issue and implementing a functionality that permits to change the corners shape using Rust.}\\
     \\
 % Education
-  2018-2020 & Master's Degree in Telecommunications Engineering \\
-  & Military Technical Academy, Bucharest \\
+  Education & Master's Degree in Telecommunications Engineering \\
+  & Military Technical Academy, Bucharest 2018-2020 \\
   \\
-  2014-2018 & Bachelor's Degree in Telecommunications Engineering \\
-  & Military Technical Academy, Bucharest\\
+  & Bachelor's Degree in Telecommunications Engineering \\
+  & Military Technical Academy, Bucharest 2014-2018\\
   \\
     % Languages
     Languages & Romanian, English, Italian, French
-\end{tabular}
+}
 \end{document}
